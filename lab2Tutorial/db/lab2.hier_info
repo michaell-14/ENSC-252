@@ -1,0 +1,8 @@
+|oddThing
+A => f.IN0
+B => f.IN1
+C => f.IN0
+D => f.IN1
+f << f.DB_MAX_OUTPUT_PORT_TYPE
+
+

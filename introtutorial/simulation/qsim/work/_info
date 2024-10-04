@@ -1,0 +1,144 @@
+m255
+K4
+z2
+!s12c _opt2
+Z0 !s99 nomlopt
+!s12c _opt1
+R0
+!s11f MIXED_VERSIONS
+!s12c _opt
+R0
+!s11e vcom 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/Desktop/introtutorial/simulation/qsim
+T_opt
+!s110 1726475093
+V5HoUd?`5ZRj75Oc3]>X8C1
+04 17 10 work light_vhd_vec_tst light_arch 1
+=1-141333536f6d-66e7eb55-14c-5434
+R0
+Z2 !s12b OEM100
+Z3 !s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim +acc
+Z4 tCvgOpt 0
+n@_opt
+Z5 OL;O;2023.3;77
+R1
+T_opt1
+!s110 1726475841
+VinnONCG<[cAb<UIL0VfkJ1
+Z6 04 17 4 work light_vlg_vec_tst fast 0
+=1-141333536f6d-66e7ee41-1b2-13d0
+R0
+R2
+R3
+o-quiet -auto_acc_if_foreign -work work -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver +acc-c
+R4
+n@_opt1
+R5
+R1
+T_opt2
+!s110 1726475877
+VLz8>^`g8koK?HmS^Q9bmW3
+R6
+=1-141333536f6d-66e7ee64-319-1b90
+R0
+R2
+R3
+o-quiet -auto_acc_if_foreign -work work -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver +acc
+R4
+n@_opt2
+R5
+R1
+vlight
+Z7 !s110 1727117669
+!i10b 1
+!s100 Y[V`3FkN>L=J]IdUMkLGi0
+Z8 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IG079j@aOm4KInU_OEC?<72
+Z9 VDg1SIo80bB@j0V0VzS_@n1
+R1
+w1727117668
+8light.vo
+Flight.vo
+!i122 58
+L0 32 117
+Z10 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z11 !s108 1727117669.000000
+!s107 light.vo|
+!s90 -work|work|light.vo|
+!i113 1
+Z12 o-work work
+R4
+Elight_vhd_vec_tst
+Z13 w1726475727
+Z14 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z15 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+!i122 27
+R1
+Z16 8light.vwf.vht
+Z17 Flight.vwf.vht
+l0
+L32 1
+V8ggVPfG`]SnO6Ob^ehY2g2
+!s100 ^ZZT1LcXWL@mPE4?gBjog0
+Z18 OL;C;2023.3;77
+32
+Z19 !s110 1726475729
+!i10b 1
+Z20 !s108 1726475729.000000
+Z21 !s90 -work|work|light.vwf.vht|
+Z22 !s107 light.vwf.vht|
+!i113 0
+R12
+Z23 tExplicit 1 CvgOpt 0
+Alight_arch
+R14
+R15
+DEx4 work 17 light_vhd_vec_tst 0 22 8ggVPfG`]SnO6Ob^ehY2g2
+!i122 27
+l47
+L34 44
+VZG9dIB>fShcMO4KE_VCgg2
+!s100 fYJgmW=^N9IZLmMcbUJJj1
+R18
+32
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 0
+R12
+R23
+vlight_vlg_vec_tst
+R7
+!i10b 1
+!s100 QCASDMKkKPO:18dgYhPRQ2
+R8
+IY9aC;AKng@Vidh_MzYIJ_2
+R9
+R1
+w1727117666
+8light.vwf.vt
+Flight.vwf.vt
+!i122 59
+L0 30 36
+R10
+r1
+!s85 0
+31
+R11
+!s107 light.vwf.vt|
+!s90 -work|work|light.vwf.vt|
+!i113 1
+R12
+R4
