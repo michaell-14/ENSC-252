@@ -1,0 +1,93 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/micha/OneDrive/Documents/GitHub/FPGA/Practice/clock_Practice
+Eoddthing
+Z0 w1728316200
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 4
+Z3 dC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/pt3_modelsim
+Z4 8C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/oddThing.vhd
+Z5 FC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/oddThing.vhd
+l0
+L5 1
+V_1LBWiI?aSoDVLlnh_gS?2
+!s100 CazU[CX_nK0^7;bmTfW[D3
+Z6 OV;C;2020.1;71
+32
+Z7 !s110 1728316204
+!i10b 1
+Z8 !s108 1728316204.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/oddThing.vhd|
+Z10 !s107 C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/oddThing.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Aoddfunction
+R1
+R2
+DEx4 work 8 oddthing 0 22 _1LBWiI?aSoDVLlnh_gS?2
+!i122 4
+l11
+L10 4
+Ve`;^]NR]AHXmnG][72GMj0
+!s100 T2o8hA4>[FBY[gG3i3HeB0
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eoddthing_tb
+Z13 w1727391036
+R1
+R2
+!i122 5
+R3
+Z14 8C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/OddThing_tb.vhd
+Z15 FC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/OddThing_tb.vhd
+l0
+L11 1
+VHQ<;;LV?lgm2GjEzV468H0
+!s100 UKBWI<V9T02^X@A;Ab`5V2
+R6
+32
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/OddThing_tb.vhd|
+Z17 !s107 C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/OddThing_tb.vhd|
+!i113 1
+R11
+R12
+Abehaviour
+R1
+R2
+Z18 DEx4 work 11 oddthing_tb 0 22 HQ<;;LV?lgm2GjEzV468H0
+!i122 5
+l25
+Z19 L14 95
+Z20 VB8UoIFED`1?d72S2S0OR10
+Z21 !s100 TEWb8S;:3DDa@C0Xi4K6X2
+R6
+32
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12

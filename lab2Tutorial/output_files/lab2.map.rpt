@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab2
-Thu Sep 26 15:54:43 2024
+Mon Oct  7 08:38:10 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Sep 26 15:54:43 2024          ;
+; Analysis & Synthesis Status     ; Successful - Mon Oct  7 08:38:10 2024          ;
 ; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                   ; lab2                                           ;
 ; Top-level Entity Name           ; oddThing                                       ;
@@ -166,13 +166,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                ;
-+----------------------------------+-----------------+-----------------+--------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path         ; Library ;
-+----------------------------------+-----------------+-----------------+--------------------------------------+---------+
-; oddThing.vhd                     ; yes             ; User VHDL File  ; C:/Desktop/lab2Tutorial/oddThing.vhd ;         ;
-+----------------------------------+-----------------+-----------------+--------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                       ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+---------+
+; oddThing.vhd                     ; yes             ; User VHDL File  ; C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/oddThing.vhd ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -257,13 +257,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Thu Sep 26 15:54:28 2024
+    Info: Processing started: Mon Oct  7 08:37:58 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab2 -c lab2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file oddthing.vhd
-    Info (12022): Found design unit 1: oddThing-oddFunction File: C:/Desktop/lab2Tutorial/oddThing.vhd Line: 10
-    Info (12023): Found entity 1: oddThing File: C:/Desktop/lab2Tutorial/oddThing.vhd Line: 5
+    Info (12022): Found design unit 1: oddThing-oddFunction File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/oddThing.vhd Line: 10
+    Info (12023): Found entity 1: oddThing File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/oddThing.vhd Line: 5
 Info (12127): Elaborating entity "oddThing" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -273,9 +273,9 @@ Info (21057): Implemented 6 device resources after synthesis - the final resourc
     Info (21059): Implemented 1 output pins
     Info (21061): Implemented 1 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4873 megabytes
-    Info: Processing ended: Thu Sep 26 15:54:43 2024
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:22
+    Info: Peak virtual memory: 4888 megabytes
+    Info: Processing ended: Mon Oct  7 08:38:10 2024
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:14
 
 

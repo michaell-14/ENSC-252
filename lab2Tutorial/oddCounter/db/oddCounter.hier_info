@@ -1,0 +1,14 @@
+|oddCounter
+a => E.IN0
+a => E.IN0
+b => E.IN1
+b => E.IN1
+c => F.IN0
+c => F.IN0
+d => F.IN1
+d => F.IN1
+E <> E
+F <> F
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,21 @@
+LIBRARY ieee ;
+USE ieee.std_logic_1164.all ;
+
+ENTITY oddCounter is 
+	PORT(
+			a : in STD_LOGIC;
+			b : in STD_LOGIC;
+			c : in STD_LOGIC;
+			d : in STD_LOGIC;
+			A : inout STD_LOGIC;
+			B : inout STD_LOGIC;
+			F : out STD_LOGIC;
+		);
+	END oddCounter
+	
+architecture Behavorial of odd_counter is
+	begin
+		A <= (a AND NOT b) OR (NOT a AND b);
+		B <= (c AND NOT d) OR (NOT c AND d);
+		F <= (A AND NOT B) OR (NOT A AND B);
+	end behavorial;

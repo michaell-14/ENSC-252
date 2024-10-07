@@ -26,7 +26,7 @@
 # 
 # vcom -93 -work work {lab2.vho}
 # Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 15:58:50 on Sep 26,2024
+# Start time: 08:40:37 on Oct 07,2024
 # vcom -reportprogress 300 -93 -work work lab2.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -38,6 +38,6 @@
 # -- Loading package cyclonev_components
 # -- Compiling entity oddThing
 # -- Compiling architecture structure of oddThing
-# End time: 15:58:51 on Sep 26,2024, Elapsed time: 0:00:01
+# End time: 08:40:37 on Oct 07,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 

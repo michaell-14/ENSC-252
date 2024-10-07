@@ -1,0 +1,120 @@
+# Compile of oddThing.vhd was successful.
+# Compile of OddThing_tb.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.oddthing_tb
+# vsim -gui work.oddthing_tb 
+# Start time: 08:47:08 on Oct 07,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.oddthing_tb(behaviour)
+# Loading work.oddthing(oddfunction)
+# ** Fatal: (vsim-3817) Port "A" of entity "oddthing" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /oddthing_tb/DUT File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/oddThing.vhd Line: 6
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 08:47:09 on Oct 07,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 6
+# Compile of oddThing.vhd was successful.
+# Compile of OddThing_tb.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.oddthing_tb
+# vsim -gui work.oddthing_tb 
+# Start time: 08:49:17 on Oct 07,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.oddthing_tb(behaviour)
+# Loading work.oddthing(oddfunction)
+# ** Fatal: (vsim-3817) Port "A" of entity "oddthing" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /oddthing_tb/DUT File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/oddThing.vhd Line: 6
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 08:49:18 on Oct 07,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 2
+# Compile of oddThing.vhd was successful.
+# Compile of OddThing_tb.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.oddthing_tb
+# vsim -gui work.oddthing_tb 
+# Start time: 08:50:23 on Oct 07,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.oddthing_tb(behaviour)
+# Loading work.oddthing(oddfunction)
+add wave -r /*
+add wave sim:/oddthing_tb/DUT/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Error: Assertion violation.
+#    Time: 400 ns  Iteration: 0  Instance: /oddthing_tb
+# ** Failure: simulation ended
+#    Time: 400 ns  Iteration: 0  Process: /oddthing_tb/stimulus File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/OddThing_tb.vhd
+# Break in Process stimulus at C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/OddThing_tb.vhd line 96
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Error: Assertion violation.
+#    Time: 400 ns  Iteration: 0  Instance: /oddthing_tb
+# ** Failure: simulation ended
+#    Time: 400 ns  Iteration: 0  Process: /oddthing_tb/stimulus File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/OddThing_tb.vhd
+# Break in Process stimulus at C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/OddThing_tb.vhd line 96
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Error: Assertion violation.
+#    Time: 400 ns  Iteration: 0  Instance: /oddthing_tb
+# ** Failure: simulation ended
+#    Time: 400 ns  Iteration: 0  Process: /oddthing_tb/stimulus File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/OddThing_tb.vhd
+# Break in Process stimulus at C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/OddThing_tb.vhd line 96
+# End time: 09:16:15 on Oct 07,2024, Elapsed time: 0:25:52
+# Errors: 2, Warnings: 1
