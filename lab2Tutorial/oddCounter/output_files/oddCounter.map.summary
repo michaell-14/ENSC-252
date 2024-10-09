@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Mon Oct  7 09:44:37 2024
+Analysis & Synthesis Status : Successful - Mon Oct  7 13:54:45 2024
 Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 Revision Name : oddCounter
 Top-level Entity Name : oddCounter
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
 Total registers : 0
-Total pins : 7
+Total pins : 5
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0

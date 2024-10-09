@@ -1,13 +1,13 @@
-Fitter Status : Successful - Mon Oct  7 09:45:31 2024
+Fitter Status : Successful - Mon Oct  7 13:57:08 2024
 Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 Revision Name : oddCounter
 Top-level Entity Name : oddCounter
 Family : Cyclone V
 Device : 5CSXFC6D6F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 2 / 41,910 ( < 1 % )
+Logic utilization (in ALMs) : 1 / 41,910 ( < 1 % )
 Total registers : 0
-Total pins : 7 / 499 ( 1 % )
+Total pins : 5 / 499 ( 1 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 5,662,720 ( 0 % )
 Total RAM Blocks : 0 / 553 ( 0 % )

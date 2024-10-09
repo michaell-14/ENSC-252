@@ -1,14 +1,32 @@
 |oddCounter
-a => E.IN0
-a => E.IN0
-b => E.IN1
-b => E.IN1
-c => F.IN0
-c => F.IN0
-d => F.IN1
-d => F.IN1
-E <> E
-F <> F
-G <= G.DB_MAX_OUTPUT_PORT_TYPE
+x1 => light_1:stage1.x1
+x2 => light_1:stage1.x2
+x3 => light_1:stage2.x1
+x4 => light_1:stage2.x2
+f <= light_1:stage3.f
+
+
+|oddCounter|light_1:stage1
+x1 => f.IN0
+x1 => f.IN0
+x2 => f.IN1
+x2 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|oddCounter|light_1:stage2
+x1 => f.IN0
+x1 => f.IN0
+x2 => f.IN1
+x2 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|oddCounter|light_1:stage3
+x1 => f.IN0
+x1 => f.IN0
+x2 => f.IN1
+x2 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 

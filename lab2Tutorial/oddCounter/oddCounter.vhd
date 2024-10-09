@@ -3,19 +3,25 @@ USE ieee.std_logic_1164.all ;
 
 ENTITY oddCounter is 
 	PORT(
-			a : in STD_LOGIC;
-			b : in STD_LOGIC;
-			c : in STD_LOGIC;
-			d : in STD_LOGIC;
-			E : inout STD_LOGIC;
-			F : inout STD_LOGIC;
-			G : out STD_LOGIC
+			x1 : in STD_LOGIC;
+			x2 : in STD_LOGIC;
+			x3 : in STD_LOGIC;
+			x4 : in STD_LOGIC;
+			f : out STD_LOGIC
 		);
 	END oddCounter;
 	
+	
 architecture Behavorial of oddCounter is
+signal a,b : std_logic;
+component light_1
+	PORT(x1, x2 : IN STD_LOGIC ;
+	f : OUT STD_LOGIC);
+	end component;
+
 	begin
-		E <= (a AND NOT b) OR (NOT a AND b);
-		F <= (c AND NOT d) OR (NOT c AND d);
-		G <= (E AND NOT F) OR (NOT E AND F);
-	end behavorial;
+		stage1: light_1 port map(x1, x2, a);
+		stage2: light_1 port map(x3, x4, b);
+		stage3: light_1 port map(a,b,f);
+	
+end behavorial;

@@ -9,44 +9,230 @@ z2
 !i10f 100
 cModel Technology
 dC:/intelFPGA/20.1
-Eoddthing_tb
-Z0 w1727391036
+Elight_1
+Z0 w1728319333
 Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 0
-Z3 dC:/Desktop/lab2Tutorial
-Z4 8C:/Desktop/lab2Tutorial/OddThing_tb.vhd
-Z5 FC:/Desktop/lab2Tutorial/OddThing_tb.vhd
+!i122 9
+Z3 dC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial
+Z4 8C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/oddCounter/light_1.vhd
+Z5 FC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/oddCounter/light_1.vhd
 l0
-L11 1
-VHQ<;;LV?lgm2GjEzV468H0
-!s100 UKBWI<V9T02^X@A;Ab`5V2
+L5 1
+VoBM1b79Vbm367>V]EgdOn1
+!s100 oaX`gE@_lUDTO5^LJ:QVk1
 Z6 OV;C;2020.1;71
 32
-Z7 !s110 1727391779
+Z7 !s110 1728335204
 !i10b 1
-Z8 !s108 1727391779.000000
-Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Desktop/lab2Tutorial/OddThing_tb.vhd|
-!s107 C:/Desktop/lab2Tutorial/OddThing_tb.vhd|
+Z8 !s108 1728335204.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/oddCounter/light_1.vhd|
+Z10 !s107 C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/oddCounter/light_1.vhd|
 !i113 1
-Z10 o-work work -2002 -explicit
-Z11 tExplicit 1 CvgOpt 0
-Abehaviour
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Alogicfunction
 R1
 R2
-DEx4 work 11 oddthing_tb 0 22 HQ<;;LV?lgm2GjEzV468H0
-!i122 0
-l25
-L14 95
-VB8UoIFED`1?d72S2S0OR10
-!s100 TEWb8S;:3DDa@C0Xi4K6X2
+DEx4 work 7 light_1 0 22 oBM1b79Vbm367>V]EgdOn1
+!i122 9
+l11
+Z13 L10 4
+VHPdzi@>@9b^W7]53f2:2W0
+!s100 k[K6XPIMAWO[5G]:7b3J42
 R6
 32
 R7
 !i10b 1
 R8
 R9
-Z12 !s107 C:/Desktop/lab2Tutorial/OddThing_tb.vhd|
-!i113 1
 R10
+!i113 1
 R11
+R12
+Eoddcounter
+Z14 w1728334469
+R1
+R2
+!i122 8
+R3
+Z15 8C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/oddCounter/oddCounter.vhd
+Z16 FC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/oddCounter/oddCounter.vhd
+l0
+L4 1
+VFSVXkG`fnW7EX4VJM_k`^1
+!s100 kOTaLUi=W7<[Y9lcYge=n2
+R6
+32
+R7
+!i10b 1
+R8
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/oddCounter/oddCounter.vhd|
+Z18 !s107 C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/oddCounter/oddCounter.vhd|
+!i113 1
+R11
+R12
+Abehavorial
+R1
+R2
+DEx4 work 10 oddcounter 0 22 FSVXkG`fnW7EX4VJM_k`^1
+!i122 8
+l22
+L15 13
+Vb4ZhM=3:=O>iUFI>F31cQ0
+!s100 om@P4QXobhHYib[JMCKVJ2
+R6
+32
+R7
+!i10b 1
+R8
+R17
+R18
+!i113 1
+R11
+R12
+Eoddcounter_tb
+Z19 w1728335199
+R1
+R2
+!i122 7
+R3
+Z20 8C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/oddCounter_tb.vhd
+Z21 FC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/oddCounter_tb.vhd
+l0
+Z22 L11 1
+VBg9MGn_C<YAU1kIc_o0HE1
+!s100 Ja=Nkkc=f;EfQah^ScYSC1
+R6
+32
+R7
+!i10b 1
+R8
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/oddCounter_tb.vhd|
+Z24 !s107 C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/oddCounter_tb.vhd|
+!i113 1
+R11
+R12
+Abehaviour
+R1
+R2
+DEx4 work 13 oddcounter_tb 0 22 Bg9MGn_C<YAU1kIc_o0HE1
+!i122 7
+l25
+Z25 L14 95
+V4n`DlAYU^@8nQMN97ihT23
+!s100 [F1HWmff<IC^=W<0P^nhE1
+R6
+32
+R7
+!i10b 1
+R8
+R23
+R24
+!i113 1
+R11
+R12
+Abehavior
+R1
+R2
+DEx4 work 13 oddcounter_tb 0 22 168O;bne^hE8QJ?2_e7lz1
+!i122 4
+l35
+L7 71
+VOYJ?Rez@f=Qo7GV2_[XGZ2
+!s100 LUzIBl5bIn8PQ63^>XFgJ3
+R6
+32
+!s110 1728333207
+!i10b 1
+!s108 1728333207.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/oddCounter/oddCounter_tb.vhd|
+!s107 C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/oddCounter/oddCounter_tb.vhd|
+!i113 1
+R11
+R12
+FC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/oddCounter/oddCounter_tb.vhd
+w1728333119
+8C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/oddCounter/oddCounter_tb.vhd
+Eoddthing
+Z26 w1728316200
+R1
+R2
+!i122 10
+R3
+Z27 8C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/oddThing.vhd
+Z28 FC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/oddThing.vhd
+l0
+L5 1
+V_1LBWiI?aSoDVLlnh_gS?2
+!s100 CazU[CX_nK0^7;bmTfW[D3
+R6
+32
+Z29 !s110 1728335466
+!i10b 1
+Z30 !s108 1728335466.000000
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/oddThing.vhd|
+Z32 !s107 C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/oddThing.vhd|
+!i113 1
+R11
+R12
+Aoddfunction
+R1
+R2
+Z33 DEx4 work 8 oddthing 0 22 _1LBWiI?aSoDVLlnh_gS?2
+!i122 10
+l11
+R13
+Z34 Ve`;^]NR]AHXmnG][72GMj0
+Z35 !s100 T2o8hA4>[FBY[gG3i3HeB0
+R6
+32
+R29
+!i10b 1
+R30
+R31
+R32
+!i113 1
+R11
+R12
+Eoddthing_tb
+Z36 w1727391036
+R1
+R2
+!i122 2
+R3
+Z37 8C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/OddThing_tb.vhd
+Z38 FC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/OddThing_tb.vhd
+l0
+R22
+VHQ<;;LV?lgm2GjEzV468H0
+!s100 UKBWI<V9T02^X@A;Ab`5V2
+R6
+32
+Z39 !s110 1728331658
+!i10b 1
+Z40 !s108 1728331658.000000
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/OddThing_tb.vhd|
+Z42 !s107 C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial/OddThing_tb.vhd|
+!i113 1
+R11
+R12
+Abehaviour
+R1
+R2
+DEx4 work 11 oddthing_tb 0 22 HQ<;;LV?lgm2GjEzV468H0
+!i122 2
+l25
+R25
+VB8UoIFED`1?d72S2S0OR10
+!s100 TEWb8S;:3DDa@C0Xi4K6X2
+R6
+32
+R39
+!i10b 1
+R40
+R41
+R42
+!i113 1
+R11
+R12

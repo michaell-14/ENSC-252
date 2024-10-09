@@ -1,0 +1,77 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY oddCounter_tb IS
+END oddCounter_tb;
+
+ARCHITECTURE behavior OF oddCounter_tb IS
+
+    -- Component Declaration for the Unit Under Test (UUT)
+    COMPONENT oddCounter
+    PORT(
+         a : IN std_logic;
+         b : IN std_logic;
+         c : IN std_logic;
+         d : IN std_logic;
+         E : INOUT std_logic;
+         F : INOUT std_logic;
+         G : OUT std_logic
+        );
+    END COMPONENT;
+    
+    -- Inputs
+    signal a : std_logic := '0';
+    signal b : std_logic := '0';
+    signal c : std_logic := '0';
+    signal d : std_logic := '0';
+    
+    -- Bidirectional
+    signal E : std_logic;
+    signal F : std_logic;
+
+    -- Output
+    signal G : std_logic;
+
+BEGIN
+
+    -- Instantiate the Unit Under Test (UUT)
+    uut: oddCounter PORT MAP (
+          a => a,
+          b => b,
+          c => c,
+          d => d,
+          E => E,
+          F => F,
+          G => G
+        );
+
+    -- Stimulus process
+    stim_proc: process
+    begin        
+        -- Test case 1: All inputs are 0
+        a <= '0'; b <= '0'; c <= '0'; d <= '0';
+        wait for 10 ns;
+        
+        -- Test case 2: All inputs are 1
+        a <= '1'; b <= '1'; c <= '1'; d <= '1';
+        wait for 10 ns;
+        
+        -- Test case 3: Mix of 0s and 1s
+        a <= '1'; b <= '0'; c <= '1'; d <= '0';
+        wait for 10 ns;
+
+        a <= '0'; b <= '1'; c <= '0'; d <= '1';
+        wait for 10 ns;
+
+        -- Test case 4: Random combinations
+        a <= '1'; b <= '1'; c <= '0'; d <= '1';
+        wait for 10 ns;
+
+        a <= '0'; b <= '0'; c <= '1'; d <= '1';
+        wait for 10 ns;
+        
+        -- Stop simulation
+        wait;
+    end process;
+
+END behavior;
