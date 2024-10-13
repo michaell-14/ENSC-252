@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab03
-Wed Oct  9 18:11:37 2024
+Sun Oct 13 14:23:23 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -43,14 +43,14 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Oct  9 18:11:37 2024          ;
+; Analysis & Synthesis Status     ; Successful - Sun Oct 13 14:23:23 2024          ;
 ; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                   ; lab03                                          ;
 ; Top-level Entity Name           ; Part1                                          ;
 ; Family                          ; Cyclone V                                      ;
 ; Logic utilization (in ALMs)     ; N/A                                            ;
 ; Total registers                 ; 0                                              ;
-; Total pins                      ; 2                                              ;
+; Total pins                      ; 20                                             ;
 ; Total virtual pins              ; 0                                              ;
 ; Total block memory bits         ; 0                                              ;
 ; Total DSP Blocks                ; 0                                              ;
@@ -191,13 +191,13 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                ;
 ; Dedicated logic registers                   ; 0              ;
 ;                                             ;                ;
-; I/O pins                                    ; 2              ;
+; I/O pins                                    ; 20             ;
 ;                                             ;                ;
 ; Total DSP Blocks                            ; 0              ;
 ;                                             ;                ;
-; Maximum fan-out node                        ; LEDR[0]~output ;
+; Maximum fan-out node                        ; LEDR[9]~output ;
 ; Maximum fan-out                             ; 1              ;
-; Total fan-out                               ; 3              ;
+; Total fan-out                               ; 30             ;
 ; Average fan-out                             ; 0.75           ;
 +---------------------------------------------+----------------+
 
@@ -207,7 +207,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |Part1                     ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 2    ; 0            ; |Part1              ; Part1       ; work         ;
+; |Part1                     ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 20   ; 0            ; |Part1              ; Part1       ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -232,7 +232,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------+---------------------------------+
 ; Type              ; Count                           ;
 +-------------------+---------------------------------+
-; boundary_port     ; 2                               ;
+; boundary_port     ; 20                              ;
 ;                   ;                                 ;
 ; Max LUT depth     ; 0.00                            ;
 ; Average LUT depth ; 0.00                            ;
@@ -254,7 +254,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Wed Oct  9 18:11:27 2024
+    Info: Processing started: Sun Oct 13 14:23:17 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab03 -c lab03
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -313,13 +313,13 @@ Warning (20013): Ignored 24 assignments for entity "de10" -- entity does not exi
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity de10 -section_id Top was ignored
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 1 output pins
+Info (21057): Implemented 20 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 10 input pins
+    Info (21059): Implemented 10 output pins
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 51 warnings
     Info: Peak virtual memory: 4806 megabytes
-    Info: Processing ended: Wed Oct  9 18:11:37 2024
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Processing ended: Sun Oct 13 14:23:23 2024
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:08
 
 
