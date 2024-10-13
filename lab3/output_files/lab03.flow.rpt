@@ -1,5 +1,5 @@
 Flow report for lab03
-Sun Oct 13 14:23:58 2024
+Sun Oct 13 14:52:27 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -41,16 +41,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +---------------------------------+------------------------------------------------+
-; Flow Status                     ; Successful - Sun Oct 13 14:23:58 2024          ;
+; Flow Status                     ; Successful - Sun Oct 13 14:52:27 2024          ;
 ; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                   ; lab03                                          ;
-; Top-level Entity Name           ; Part1                                          ;
+; Top-level Entity Name           ; Part3                                          ;
 ; Family                          ; Cyclone V                                      ;
 ; Device                          ; 5CSXFC6D6F31C6                                 ;
 ; Timing Models                   ; Final                                          ;
 ; Logic utilization (in ALMs)     ; 1 / 41,910 ( < 1 % )                           ;
 ; Total registers                 ; 0                                              ;
-; Total pins                      ; 20 / 499 ( 4 % )                               ;
+; Total pins                      ; 24 / 499 ( 5 % )                               ;
 ; Total virtual pins              ; 0                                              ;
 ; Total block memory bits         ; 0 / 5,662,720 ( 0 % )                          ;
 ; Total DSP Blocks                ; 0 / 112 ( 0 % )                                ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/13/2024 14:23:17 ;
+; Start date & time ; 10/13/2024 14:51:46 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lab03               ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+---------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name   ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+---------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 24271721295661.172885459712400         ; --            ; --            ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 24271721295661.172885630602768         ; --            ; --            ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --            ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --            ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --            ; eda_board_design_signal_integrity ;
@@ -90,16 +90,16 @@ https://fpgasoftware.intel.com/eula.
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --            ; --                                ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --            ; --                                ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; DE10_Standard ; Top                               ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; Part1         ; Top                               ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; Part3         ; Top                               ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; de10          ; Top                               ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; DE10_Standard ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; Part1         ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; Part3         ; Top                               ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; de10          ; Top                               ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; DE10_Standard ; Top                               ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; Part1         ; Top                               ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; Part3         ; Top                               ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; de10          ; Top                               ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --            ; --                                ;
-; TOP_LEVEL_ENTITY                    ; Part1                                  ; lab03         ; --            ; --                                ;
+; TOP_LEVEL_ENTITY                    ; Part3                                  ; lab03         ; --            ; --                                ;
 +-------------------------------------+----------------------------------------+---------------+---------------+-----------------------------------+
 
 
@@ -108,12 +108,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:06     ; 1.0                     ; 4793 MB             ; 00:00:08                           ;
-; Fitter               ; 00:00:23     ; 1.0                     ; 7788 MB             ; 00:01:23                           ;
-; Assembler            ; 00:00:05     ; 1.0                     ; 4864 MB             ; 00:00:04                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.1                     ; 5247 MB             ; 00:00:03                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4723 MB             ; 00:00:01                           ;
-; Total                ; 00:00:38     ; --                      ; --                  ; 00:01:39                           ;
+; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4866 MB             ; 00:00:08                           ;
+; Fitter               ; 00:00:23     ; 1.0                     ; 7792 MB             ; 00:01:26                           ;
+; Assembler            ; 00:00:04     ; 1.0                     ; 4868 MB             ; 00:00:04                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 5230 MB             ; 00:00:03                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4732 MB             ; 00:00:01                           ;
+; Total                ; 00:00:38     ; --                      ; --                  ; 00:01:42                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
