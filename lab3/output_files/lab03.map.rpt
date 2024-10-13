@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab03
-Sun Oct 13 14:51:52 2024
+Sun Oct 13 15:54:37 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Oct 13 14:51:52 2024          ;
+; Analysis & Synthesis Status     ; Successful - Sun Oct 13 15:54:37 2024          ;
 ; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                   ; lab03                                          ;
 ; Top-level Entity Name           ; Part3                                          ;
@@ -257,7 +257,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Sun Oct 13 14:51:45 2024
+    Info: Processing started: Sun Oct 13 15:54:30 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab03 -c lab03
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -269,6 +269,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file part2.v
 Info (12021): Found 2 design units, including 1 entities, in source file part3.vhd
     Info (12022): Found design unit 1: Part3-behavorial File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/Part3.vhd Line: 14
     Info (12023): Found entity 1: Part3 File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/Part3.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file segdecoder.vhd
+    Info (12022): Found design unit 1: SegDecoder-behavorial File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/SegDecoder.vhd Line: 12
+    Info (12023): Found entity 1: SegDecoder File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/SegDecoder.vhd Line: 6
 Info (12127): Elaborating entity "Part3" for the top level hierarchy
 Warning (10541): VHDL Signal Declaration warning at Part3.vhd(10): used implicit default value for signal "HEX0" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/Part3.vhd Line: 10
 Warning (10541): VHDL Signal Declaration warning at Part3.vhd(10): used implicit default value for signal "HEX1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/Part3.vhd Line: 10
@@ -354,9 +357,9 @@ Info (21057): Implemented 24 device resources after synthesis - the final resour
     Info (21058): Implemented 10 input pins
     Info (21059): Implemented 14 output pins
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 79 warnings
-    Info: Peak virtual memory: 4866 megabytes
-    Info: Processing ended: Sun Oct 13 14:51:52 2024
+    Info: Peak virtual memory: 4870 megabytes
+    Info: Processing ended: Sun Oct 13 15:54:37 2024
     Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:08
+    Info: Total CPU time (on all processors): 00:00:07
 
 

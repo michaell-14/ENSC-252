@@ -11,7 +11,8 @@ entity SegDecoder is
 	end SegDecoder;
 architecture behavorial of SegDecoder is 
 	begin
-		Y <=  "1111110" when "0000", 
+		with D select
+			Y <=  "1111110" when "0000",  
 				"0110000" when "0001", 
 				"1101101" when "0010", 
 				"1111001" when "0011",
