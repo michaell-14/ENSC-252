@@ -1,0 +1,93 @@
+m255
+K4
+z2
+!s11e vcom 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/simulation/questa
+Epart3
+Z1 w1729024704
+Z2 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z3 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+!i122 0
+R0
+Z4 8C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/Part3.vhd
+Z5 FC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/Part3.vhd
+l0
+L6 1
+VZo:K1iFKk[@X>7XQVgTY<3
+!s100 B@Z?QaRzXS?Z_>3a;24jD0
+Z6 OL;C;2023.3;77
+31
+Z7 !s110 1729030654
+!i10b 1
+Z8 !s108 1729030654.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/Part3.vhd|
+Z10 !s107 C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/Part3.vhd|
+!i113 0
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehavorial
+R2
+R3
+DEx4 work 5 part3 0 22 Zo:K1iFKk[@X>7XQVgTY<3
+!i122 0
+l33
+L14 68
+V8SY?=6^m5?bQlNG9ED<i72
+!s100 ;UB5Q`];12YB8PL@QMVAU1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Esegdecoder
+Z13 w1729020354
+R2
+R3
+!i122 1
+R0
+Z14 8C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/SegDecoder.vhd
+Z15 FC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/SegDecoder.vhd
+l0
+L6 1
+VMGiIBhBGF59i8^S=RmW6A3
+!s100 mQEll0dDe_bSGod]BS;bf3
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/SegDecoder.vhd|
+!s107 C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/SegDecoder.vhd|
+!i113 0
+R11
+R12
+Abehavorial
+R2
+R3
+DEx4 work 10 segdecoder 0 22 MGiIBhBGF59i8^S=RmW6A3
+!i122 1
+l13
+L12 21
+VhmTi]79F2Rz_]6VO;g1n;3
+!s100 B0NGM286_XTUz^3mdT9Pb1
+R6
+31
+R7
+!i10b 1
+R8
+R16
+Z17 !s107 C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/SegDecoder.vhd|
+!i113 0
+R11
+R12
