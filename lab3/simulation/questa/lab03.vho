@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition"
 
--- DATE "10/14/2024 16:04:33"
+-- DATE "10/15/2024 12:23:31"
 
 -- 
 -- Device: Altera 5CSXFC6D6F31C6 Package FBGA896
@@ -37,8 +37,8 @@ USE IEEE.STD_LOGIC_1164.ALL;
 ENTITY 	Part3 IS
     PORT (
 	SW : IN std_logic_vector(9 DOWNTO 0);
-	HEX0 : OUT std_logic_vector(6 DOWNTO 0);
-	HEX1 : OUT std_logic_vector(6 DOWNTO 0)
+	HEX0 : BUFFER std_logic_vector(6 DOWNTO 0);
+	HEX1 : BUFFER std_logic_vector(6 DOWNTO 0)
 	);
 END Part3;
 
@@ -107,26 +107,16 @@ SIGNAL \hex1_decoder|Mux3~0_combout\ : std_logic;
 SIGNAL \hex1_decoder|Mux2~0_combout\ : std_logic;
 SIGNAL \hex1_decoder|Mux1~0_combout\ : std_logic;
 SIGNAL \hex1_decoder|Mux0~0_combout\ : std_logic;
-SIGNAL \ALT_INV_SW[7]~input_o\ : std_logic;
-SIGNAL \ALT_INV_SW[6]~input_o\ : std_logic;
-SIGNAL \ALT_INV_SW[5]~input_o\ : std_logic;
+SIGNAL \hex0_decoder|ALT_INV_Mux0~0_combout\ : std_logic;
+SIGNAL \hex1_decoder|ALT_INV_Mux0~0_combout\ : std_logic;
+SIGNAL \ALT_INV_SW[0]~input_o\ : std_logic;
+SIGNAL \ALT_INV_SW[1]~input_o\ : std_logic;
+SIGNAL \ALT_INV_SW[2]~input_o\ : std_logic;
 SIGNAL \ALT_INV_SW[4]~input_o\ : std_logic;
 SIGNAL \ALT_INV_SW[3]~input_o\ : std_logic;
-SIGNAL \ALT_INV_SW[2]~input_o\ : std_logic;
-SIGNAL \ALT_INV_SW[1]~input_o\ : std_logic;
-SIGNAL \ALT_INV_SW[0]~input_o\ : std_logic;
-SIGNAL \hex1_decoder|ALT_INV_Mux0~0_combout\ : std_logic;
-SIGNAL \hex1_decoder|ALT_INV_Mux1~0_combout\ : std_logic;
-SIGNAL \hex1_decoder|ALT_INV_Mux2~0_combout\ : std_logic;
-SIGNAL \hex1_decoder|ALT_INV_Mux3~0_combout\ : std_logic;
-SIGNAL \hex1_decoder|ALT_INV_Mux4~0_combout\ : std_logic;
-SIGNAL \hex1_decoder|ALT_INV_Mux5~0_combout\ : std_logic;
-SIGNAL \hex0_decoder|ALT_INV_Mux0~0_combout\ : std_logic;
-SIGNAL \hex0_decoder|ALT_INV_Mux1~0_combout\ : std_logic;
-SIGNAL \hex0_decoder|ALT_INV_Mux2~0_combout\ : std_logic;
-SIGNAL \hex0_decoder|ALT_INV_Mux3~0_combout\ : std_logic;
-SIGNAL \hex0_decoder|ALT_INV_Mux4~0_combout\ : std_logic;
-SIGNAL \hex0_decoder|ALT_INV_Mux5~0_combout\ : std_logic;
+SIGNAL \ALT_INV_SW[5]~input_o\ : std_logic;
+SIGNAL \ALT_INV_SW[6]~input_o\ : std_logic;
+SIGNAL \ALT_INV_SW[7]~input_o\ : std_logic;
 
 BEGIN
 
@@ -136,26 +126,16 @@ HEX1 <= ww_HEX1;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
-\ALT_INV_SW[7]~input_o\ <= NOT \SW[7]~input_o\;
-\ALT_INV_SW[6]~input_o\ <= NOT \SW[6]~input_o\;
-\ALT_INV_SW[5]~input_o\ <= NOT \SW[5]~input_o\;
+\hex0_decoder|ALT_INV_Mux0~0_combout\ <= NOT \hex0_decoder|Mux0~0_combout\;
+\hex1_decoder|ALT_INV_Mux0~0_combout\ <= NOT \hex1_decoder|Mux0~0_combout\;
+\ALT_INV_SW[0]~input_o\ <= NOT \SW[0]~input_o\;
+\ALT_INV_SW[1]~input_o\ <= NOT \SW[1]~input_o\;
+\ALT_INV_SW[2]~input_o\ <= NOT \SW[2]~input_o\;
 \ALT_INV_SW[4]~input_o\ <= NOT \SW[4]~input_o\;
 \ALT_INV_SW[3]~input_o\ <= NOT \SW[3]~input_o\;
-\ALT_INV_SW[2]~input_o\ <= NOT \SW[2]~input_o\;
-\ALT_INV_SW[1]~input_o\ <= NOT \SW[1]~input_o\;
-\ALT_INV_SW[0]~input_o\ <= NOT \SW[0]~input_o\;
-\hex1_decoder|ALT_INV_Mux0~0_combout\ <= NOT \hex1_decoder|Mux0~0_combout\;
-\hex1_decoder|ALT_INV_Mux1~0_combout\ <= NOT \hex1_decoder|Mux1~0_combout\;
-\hex1_decoder|ALT_INV_Mux2~0_combout\ <= NOT \hex1_decoder|Mux2~0_combout\;
-\hex1_decoder|ALT_INV_Mux3~0_combout\ <= NOT \hex1_decoder|Mux3~0_combout\;
-\hex1_decoder|ALT_INV_Mux4~0_combout\ <= NOT \hex1_decoder|Mux4~0_combout\;
-\hex1_decoder|ALT_INV_Mux5~0_combout\ <= NOT \hex1_decoder|Mux5~0_combout\;
-\hex0_decoder|ALT_INV_Mux0~0_combout\ <= NOT \hex0_decoder|Mux0~0_combout\;
-\hex0_decoder|ALT_INV_Mux1~0_combout\ <= NOT \hex0_decoder|Mux1~0_combout\;
-\hex0_decoder|ALT_INV_Mux2~0_combout\ <= NOT \hex0_decoder|Mux2~0_combout\;
-\hex0_decoder|ALT_INV_Mux3~0_combout\ <= NOT \hex0_decoder|Mux3~0_combout\;
-\hex0_decoder|ALT_INV_Mux4~0_combout\ <= NOT \hex0_decoder|Mux4~0_combout\;
-\hex0_decoder|ALT_INV_Mux5~0_combout\ <= NOT \hex0_decoder|Mux5~0_combout\;
+\ALT_INV_SW[5]~input_o\ <= NOT \SW[5]~input_o\;
+\ALT_INV_SW[6]~input_o\ <= NOT \SW[6]~input_o\;
+\ALT_INV_SW[7]~input_o\ <= NOT \SW[7]~input_o\;
 
 -- Location: IOOBUF_X60_Y0_N19
 \HEX0[0]~output\ : cyclonev_io_obuf
@@ -179,7 +159,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \hex0_decoder|ALT_INV_Mux5~0_combout\,
+	i => \hex0_decoder|Mux5~0_combout\,
 	devoe => ww_devoe,
 	o => ww_HEX0(1));
 
@@ -192,7 +172,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \hex0_decoder|ALT_INV_Mux4~0_combout\,
+	i => \hex0_decoder|Mux4~0_combout\,
 	devoe => ww_devoe,
 	o => ww_HEX0(2));
 
@@ -205,7 +185,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \hex0_decoder|ALT_INV_Mux3~0_combout\,
+	i => \hex0_decoder|Mux3~0_combout\,
 	devoe => ww_devoe,
 	o => ww_HEX0(3));
 
@@ -218,7 +198,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \hex0_decoder|ALT_INV_Mux2~0_combout\,
+	i => \hex0_decoder|Mux2~0_combout\,
 	devoe => ww_devoe,
 	o => ww_HEX0(4));
 
@@ -231,7 +211,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \hex0_decoder|ALT_INV_Mux1~0_combout\,
+	i => \hex0_decoder|Mux1~0_combout\,
 	devoe => ww_devoe,
 	o => ww_HEX0(5));
 
@@ -270,7 +250,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \hex1_decoder|ALT_INV_Mux5~0_combout\,
+	i => \hex1_decoder|Mux5~0_combout\,
 	devoe => ww_devoe,
 	o => ww_HEX1(1));
 
@@ -283,7 +263,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \hex1_decoder|ALT_INV_Mux4~0_combout\,
+	i => \hex1_decoder|Mux4~0_combout\,
 	devoe => ww_devoe,
 	o => ww_HEX1(2));
 
@@ -296,7 +276,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \hex1_decoder|ALT_INV_Mux3~0_combout\,
+	i => \hex1_decoder|Mux3~0_combout\,
 	devoe => ww_devoe,
 	o => ww_HEX1(3));
 
@@ -309,7 +289,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \hex1_decoder|ALT_INV_Mux2~0_combout\,
+	i => \hex1_decoder|Mux2~0_combout\,
 	devoe => ww_devoe,
 	o => ww_HEX1(4));
 
@@ -322,7 +302,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \hex1_decoder|ALT_INV_Mux1~0_combout\,
+	i => \hex1_decoder|Mux1~0_combout\,
 	devoe => ww_devoe,
 	o => ww_HEX1(5));
 
@@ -386,13 +366,13 @@ PORT MAP (
 -- Location: LABCELL_X61_Y2_N30
 \hex0_decoder|Mux6~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \hex0_decoder|Mux6~0_combout\ = ( \SW[2]~input_o\ & ( \SW[3]~input_o\ ) ) # ( !\SW[2]~input_o\ & ( \SW[3]~input_o\ ) ) # ( \SW[2]~input_o\ & ( !\SW[3]~input_o\ & ( (!\SW[1]~input_o\) # (!\SW[0]~input_o\) ) ) ) # ( !\SW[2]~input_o\ & ( !\SW[3]~input_o\ & ( 
--- \SW[1]~input_o\ ) ) )
+-- \hex0_decoder|Mux6~0_combout\ = ( \SW[2]~input_o\ & ( \SW[3]~input_o\ & ( !\SW[1]~input_o\ ) ) ) # ( !\SW[2]~input_o\ & ( \SW[3]~input_o\ & ( (\SW[1]~input_o\ & \SW[0]~input_o\) ) ) ) # ( \SW[2]~input_o\ & ( !\SW[3]~input_o\ & ( (!\SW[1]~input_o\ & 
+-- !\SW[0]~input_o\) ) ) ) # ( !\SW[2]~input_o\ & ( !\SW[3]~input_o\ & ( (!\SW[1]~input_o\ & \SW[0]~input_o\) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0011001100110011111111001111110011111111111111111111111111111111",
+	lut_mask => "0000110000001100110000001100000000000011000000111100110011001100",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -405,13 +385,13 @@ PORT MAP (
 -- Location: LABCELL_X61_Y2_N39
 \hex0_decoder|Mux5~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \hex0_decoder|Mux5~0_combout\ = ( \SW[2]~input_o\ & ( \SW[3]~input_o\ & ( !\SW[1]~input_o\ ) ) ) # ( \SW[2]~input_o\ & ( !\SW[3]~input_o\ & ( (\SW[0]~input_o\ & \SW[1]~input_o\) ) ) ) # ( !\SW[2]~input_o\ & ( !\SW[3]~input_o\ & ( (\SW[1]~input_o\) # 
--- (\SW[0]~input_o\) ) ) )
+-- \hex0_decoder|Mux5~0_combout\ = ( \SW[2]~input_o\ & ( \SW[3]~input_o\ & ( (!\SW[0]~input_o\) # (\SW[1]~input_o\) ) ) ) # ( !\SW[2]~input_o\ & ( \SW[3]~input_o\ & ( (\SW[0]~input_o\ & \SW[1]~input_o\) ) ) ) # ( \SW[2]~input_o\ & ( !\SW[3]~input_o\ & ( 
+-- !\SW[0]~input_o\ $ (!\SW[1]~input_o\) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0101111101011111000001010000010100000000000000001111000011110000",
+	lut_mask => "0000000000000000010110100101101000000101000001011010111110101111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -424,13 +404,12 @@ PORT MAP (
 -- Location: LABCELL_X61_Y2_N42
 \hex0_decoder|Mux4~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \hex0_decoder|Mux4~0_combout\ = ( !\SW[2]~input_o\ & ( \SW[3]~input_o\ & ( (!\SW[1]~input_o\ & \SW[0]~input_o\) ) ) ) # ( \SW[2]~input_o\ & ( !\SW[3]~input_o\ & ( (!\SW[1]~input_o\) # (\SW[0]~input_o\) ) ) ) # ( !\SW[2]~input_o\ & ( !\SW[3]~input_o\ & ( 
--- \SW[0]~input_o\ ) ) )
+-- \hex0_decoder|Mux4~0_combout\ = ( \SW[2]~input_o\ & ( \SW[3]~input_o\ & ( (!\SW[0]~input_o\) # (\SW[1]~input_o\) ) ) ) # ( !\SW[2]~input_o\ & ( !\SW[3]~input_o\ & ( (\SW[1]~input_o\ & !\SW[0]~input_o\) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000111100001111110011111100111100001100000011000000000000000000",
+	lut_mask => "0011000000110000000000000000000000000000000000001111001111110011",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -462,12 +441,13 @@ PORT MAP (
 -- Location: LABCELL_X61_Y2_N24
 \hex0_decoder|Mux2~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \hex0_decoder|Mux2~0_combout\ = ( \SW[2]~input_o\ & ( \SW[3]~input_o\ & ( (!\SW[0]~input_o\) # (\SW[1]~input_o\) ) ) ) # ( !\SW[2]~input_o\ & ( !\SW[3]~input_o\ & ( (\SW[1]~input_o\ & !\SW[0]~input_o\) ) ) )
+-- \hex0_decoder|Mux2~0_combout\ = ( !\SW[2]~input_o\ & ( \SW[3]~input_o\ & ( (!\SW[1]~input_o\ & \SW[0]~input_o\) ) ) ) # ( \SW[2]~input_o\ & ( !\SW[3]~input_o\ & ( (!\SW[1]~input_o\) # (\SW[0]~input_o\) ) ) ) # ( !\SW[2]~input_o\ & ( !\SW[3]~input_o\ & ( 
+-- \SW[0]~input_o\ ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0011000000110000000000000000000000000000000000001111001111110011",
+	lut_mask => "0000111100001111110011111100111100001100000011000000000000000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -480,13 +460,13 @@ PORT MAP (
 -- Location: LABCELL_X61_Y2_N3
 \hex0_decoder|Mux1~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \hex0_decoder|Mux1~0_combout\ = ( \SW[2]~input_o\ & ( \SW[3]~input_o\ & ( (!\SW[0]~input_o\) # (\SW[1]~input_o\) ) ) ) # ( !\SW[2]~input_o\ & ( \SW[3]~input_o\ & ( (\SW[0]~input_o\ & \SW[1]~input_o\) ) ) ) # ( \SW[2]~input_o\ & ( !\SW[3]~input_o\ & ( 
--- !\SW[0]~input_o\ $ (!\SW[1]~input_o\) ) ) )
+-- \hex0_decoder|Mux1~0_combout\ = ( \SW[2]~input_o\ & ( \SW[3]~input_o\ & ( !\SW[1]~input_o\ ) ) ) # ( \SW[2]~input_o\ & ( !\SW[3]~input_o\ & ( (\SW[0]~input_o\ & \SW[1]~input_o\) ) ) ) # ( !\SW[2]~input_o\ & ( !\SW[3]~input_o\ & ( (\SW[1]~input_o\) # 
+-- (\SW[0]~input_o\) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000010110100101101000000101000001011010111110101111",
+	lut_mask => "0101111101011111000001010000010100000000000000001111000011110000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -499,12 +479,12 @@ PORT MAP (
 -- Location: LABCELL_X61_Y2_N6
 \hex0_decoder|Mux0~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \hex0_decoder|Mux0~0_combout\ = ( \SW[3]~input_o\ & ( (!\SW[1]~input_o\ & ((\SW[2]~input_o\))) # (\SW[1]~input_o\ & (\SW[0]~input_o\ & !\SW[2]~input_o\)) ) ) # ( !\SW[3]~input_o\ & ( (!\SW[1]~input_o\ & (!\SW[0]~input_o\ $ (!\SW[2]~input_o\))) ) )
+-- \hex0_decoder|Mux0~0_combout\ = ( \SW[3]~input_o\ ) # ( !\SW[3]~input_o\ & ( (!\SW[1]~input_o\ & ((\SW[2]~input_o\))) # (\SW[1]~input_o\ & ((!\SW[0]~input_o\) # (!\SW[2]~input_o\))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000110011000000000011001100000000000011110011000000001111001100",
+	lut_mask => "0011001111111100001100111111110011111111111111111111111111111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -561,12 +541,12 @@ PORT MAP (
 -- Location: LABCELL_X61_Y2_N9
 \hex1_decoder|Mux6~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \hex1_decoder|Mux6~0_combout\ = ( \SW[7]~input_o\ ) # ( !\SW[7]~input_o\ & ( (!\SW[5]~input_o\ & ((\SW[6]~input_o\))) # (\SW[5]~input_o\ & ((!\SW[4]~input_o\) # (!\SW[6]~input_o\))) ) )
+-- \hex1_decoder|Mux6~0_combout\ = ( \SW[7]~input_o\ & ( (!\SW[5]~input_o\ & ((\SW[6]~input_o\))) # (\SW[5]~input_o\ & (\SW[4]~input_o\ & !\SW[6]~input_o\)) ) ) # ( !\SW[7]~input_o\ & ( (!\SW[5]~input_o\ & (!\SW[4]~input_o\ $ (!\SW[6]~input_o\))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0101010111111010010101011111101011111111111111111111111111111111",
+	lut_mask => "0000101010100000000010101010000000000101101010100000010110101010",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -579,12 +559,12 @@ PORT MAP (
 -- Location: LABCELL_X61_Y2_N12
 \hex1_decoder|Mux5~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \hex1_decoder|Mux5~0_combout\ = ( \SW[5]~input_o\ & ( (!\SW[7]~input_o\ & ((!\SW[6]~input_o\) # (\SW[4]~input_o\))) ) ) # ( !\SW[5]~input_o\ & ( (!\SW[6]~input_o\ & (!\SW[7]~input_o\ & \SW[4]~input_o\)) # (\SW[6]~input_o\ & (\SW[7]~input_o\)) ) )
+-- \hex1_decoder|Mux5~0_combout\ = ( \SW[5]~input_o\ & ( (!\SW[4]~input_o\ & (\SW[6]~input_o\)) # (\SW[4]~input_o\ & ((\SW[7]~input_o\))) ) ) # ( !\SW[5]~input_o\ & ( (\SW[6]~input_o\ & (!\SW[7]~input_o\ $ (!\SW[4]~input_o\))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0001000110011001000100011001100110001000110011001000100011001100",
+	lut_mask => "0001000101000100000100010100010001010101001100110101010100110011",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -597,12 +577,12 @@ PORT MAP (
 -- Location: LABCELL_X61_Y2_N15
 \hex1_decoder|Mux4~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \hex1_decoder|Mux4~0_combout\ = ( \SW[5]~input_o\ & ( (!\SW[7]~input_o\ & \SW[4]~input_o\) ) ) # ( !\SW[5]~input_o\ & ( (!\SW[6]~input_o\ & ((\SW[4]~input_o\))) # (\SW[6]~input_o\ & (!\SW[7]~input_o\)) ) )
+-- \hex1_decoder|Mux4~0_combout\ = ( \SW[5]~input_o\ & ( (!\SW[6]~input_o\ & (!\SW[7]~input_o\ & !\SW[4]~input_o\)) # (\SW[6]~input_o\ & (\SW[7]~input_o\)) ) ) # ( !\SW[5]~input_o\ & ( (\SW[6]~input_o\ & (\SW[7]~input_o\ & !\SW[4]~input_o\)) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0101000011111010010100001111101000000000111100000000000011110000",
+	lut_mask => "0000010100000000000001010000000010100101000001011010010100000101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -634,12 +614,12 @@ PORT MAP (
 -- Location: LABCELL_X61_Y2_N21
 \hex1_decoder|Mux2~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \hex1_decoder|Mux2~0_combout\ = ( \SW[5]~input_o\ & ( (!\SW[6]~input_o\ & (!\SW[7]~input_o\ & !\SW[4]~input_o\)) # (\SW[6]~input_o\ & (\SW[7]~input_o\)) ) ) # ( !\SW[5]~input_o\ & ( (\SW[6]~input_o\ & (\SW[7]~input_o\ & !\SW[4]~input_o\)) ) )
+-- \hex1_decoder|Mux2~0_combout\ = ( \SW[5]~input_o\ & ( (!\SW[7]~input_o\ & \SW[4]~input_o\) ) ) # ( !\SW[5]~input_o\ & ( (!\SW[6]~input_o\ & ((\SW[4]~input_o\))) # (\SW[6]~input_o\ & (!\SW[7]~input_o\)) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000010100000000000001010000000010100101000001011010010100000101",
+	lut_mask => "0101000011111010010100001111101000000000111100000000000011110000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -652,12 +632,12 @@ PORT MAP (
 -- Location: LABCELL_X61_Y2_N57
 \hex1_decoder|Mux1~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \hex1_decoder|Mux1~0_combout\ = ( \SW[5]~input_o\ & ( (!\SW[4]~input_o\ & (\SW[6]~input_o\)) # (\SW[4]~input_o\ & ((\SW[7]~input_o\))) ) ) # ( !\SW[5]~input_o\ & ( (\SW[6]~input_o\ & (!\SW[7]~input_o\ $ (!\SW[4]~input_o\))) ) )
+-- \hex1_decoder|Mux1~0_combout\ = ( \SW[5]~input_o\ & ( (!\SW[7]~input_o\ & ((!\SW[6]~input_o\) # (\SW[4]~input_o\))) ) ) # ( !\SW[5]~input_o\ & ( (!\SW[6]~input_o\ & (!\SW[7]~input_o\ & \SW[4]~input_o\)) # (\SW[6]~input_o\ & (\SW[7]~input_o\)) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0001010000010100000101000001010001010011010100110101001101010011",
+	lut_mask => "0001100100011001000110010001100110001100100011001000110010001100",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -670,12 +650,12 @@ PORT MAP (
 -- Location: LABCELL_X61_Y2_N54
 \hex1_decoder|Mux0~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \hex1_decoder|Mux0~0_combout\ = ( \SW[5]~input_o\ & ( (\SW[7]~input_o\ & (!\SW[6]~input_o\ & \SW[4]~input_o\)) ) ) # ( !\SW[5]~input_o\ & ( !\SW[6]~input_o\ $ (((!\SW[4]~input_o\) # (\SW[7]~input_o\))) ) )
+-- \hex1_decoder|Mux0~0_combout\ = ( \SW[5]~input_o\ & ( ((!\SW[6]~input_o\) # (!\SW[4]~input_o\)) # (\SW[7]~input_o\) ) ) # ( !\SW[5]~input_o\ & ( (\SW[6]~input_o\) # (\SW[7]~input_o\) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000111111000011000011111100001100000000001100000000000000110000",
+	lut_mask => "0011111100111111001111110011111111111111111100111111111111110011",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (

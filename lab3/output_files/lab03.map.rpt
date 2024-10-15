@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab03
-Mon Oct 14 16:03:38 2024
+Tue Oct 15 12:22:38 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Oct 14 16:03:38 2024          ;
+; Analysis & Synthesis Status     ; Successful - Tue Oct 15 12:22:38 2024          ;
 ; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                   ; lab03                                          ;
 ; Top-level Entity Name           ; Part3                                          ;
@@ -235,14 +235,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 26                          ;
-;     normal            ; 26                          ;
-;         1 data inputs ; 12                          ;
+; arriav_lcell_comb     ; 16                          ;
+;     normal            ; 16                          ;
+;         1 data inputs ; 2                           ;
 ;         4 data inputs ; 14                          ;
 ; boundary_port         ; 24                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.94                        ;
+; Average LUT depth     ; 1.50                        ;
 +-----------------------+-----------------------------+
 
 
@@ -261,7 +261,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Mon Oct 14 16:03:27 2024
+    Info: Processing started: Tue Oct 15 12:22:27 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab03 -c lab03
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -339,8 +339,8 @@ Info (21057): Implemented 38 device resources after synthesis - the final resour
     Info (21059): Implemented 14 output pins
     Info (21061): Implemented 14 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 54 warnings
-    Info: Peak virtual memory: 4876 megabytes
-    Info: Processing ended: Mon Oct 14 16:03:38 2024
+    Info: Peak virtual memory: 4880 megabytes
+    Info: Processing ended: Tue Oct 15 12:22:38 2024
     Info: Elapsed time: 00:00:11
     Info: Total CPU time (on all processors): 00:00:16
 

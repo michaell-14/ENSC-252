@@ -28,7 +28,7 @@ begin
 	hex0_decoder : SegDecoder
 	port map (
 		D => SW(3 downto 0),   -- Lower 4 switches control HEX0
-		Y => HEX0              -- Output to the first 7-segment display
+		Y => HEX0(6 downto 0)              -- Output to the first 7-segment display
 	);
 
 	-- Instance of SegDecoder for HEX1
@@ -37,7 +37,7 @@ begin
 	hex1_decoder : SegDecoder
 	port map (
 		D => SW(7 downto 4),   -- Upper 4 switches control HEX1
-		Y => HEX1              -- Output to the second 7-segment display
+		Y => HEX1(6 downto 0)              -- Output to the second 7-segment display
 	);
 
 end behavorial;
