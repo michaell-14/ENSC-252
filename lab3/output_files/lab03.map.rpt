@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab03
-Tue Oct 15 13:39:20 2024
+Sun Oct 20 13:45:55 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -43,13 +43,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Oct 15 13:39:20 2024          ;
+; Analysis & Synthesis Status     ; Successful - Sun Oct 20 13:45:55 2024          ;
 ; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                   ; lab03                                          ;
 ; Top-level Entity Name           ; Part3                                          ;
 ; Family                          ; Cyclone V                                      ;
 ; Logic utilization (in ALMs)     ; N/A                                            ;
-; Total registers                 ; 1                                              ;
+; Total registers                 ; 0                                              ;
 ; Total pins                      ; 39                                             ;
 ; Total virtual pins              ; 0                                              ;
 ; Total block memory bits         ; 0                                              ;
@@ -159,11 +159,10 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 16          ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -182,25 +181,25 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------+
 ; Resource                                    ; Usage        ;
 +---------------------------------------------+--------------+
-; Estimate of Logic utilization (ALMs needed) ; 23           ;
+; Estimate of Logic utilization (ALMs needed) ; 14           ;
 ;                                             ;              ;
-; Combinational ALUT usage for logic          ; 45           ;
+; Combinational ALUT usage for logic          ; 28           ;
 ;     -- 7 input functions                    ; 0            ;
 ;     -- 6 input functions                    ; 0            ;
-;     -- 5 input functions                    ; 0            ;
-;     -- 4 input functions                    ; 28           ;
-;     -- <=3 input functions                  ; 17           ;
+;     -- 5 input functions                    ; 28           ;
+;     -- 4 input functions                    ; 0            ;
+;     -- <=3 input functions                  ; 0            ;
 ;                                             ;              ;
-; Dedicated logic registers                   ; 1            ;
+; Dedicated logic registers                   ; 0            ;
 ;                                             ;              ;
 ; I/O pins                                    ; 39           ;
 ;                                             ;              ;
 ; Total DSP Blocks                            ; 0            ;
 ;                                             ;              ;
-; Maximum fan-out node                        ; toggle_state ;
-; Maximum fan-out                             ; 17           ;
-; Total fan-out                               ; 214          ;
-; Average fan-out                             ; 1.73         ;
+; Maximum fan-out node                        ; KEY[0]~input ;
+; Maximum fan-out                             ; 28           ;
+; Total fan-out                               ; 207          ;
+; Average fan-out                             ; 1.95         ;
 +---------------------------------------------+--------------+
 
 
@@ -209,7 +208,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name            ; Entity Name ; Library Name ;
 +------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------+-------------+--------------+
-; |Part3                       ; 45 (17)             ; 1 (1)                     ; 0                 ; 0          ; 39   ; 0            ; |Part3                         ; Part3       ; work         ;
+; |Part3                       ; 28 (0)              ; 0 (0)                     ; 0                 ; 0          ; 39   ; 0            ; |Part3                         ; Part3       ; work         ;
 ;    |SegDecoder:hex0_decoder| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Part3|SegDecoder:hex0_decoder ; SegDecoder  ; work         ;
 ;    |SegDecoder:hex1_decoder| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Part3|SegDecoder:hex1_decoder ; SegDecoder  ; work         ;
 ;    |SegDecoder:hex4_decoder| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Part3|SegDecoder:hex4_decoder ; SegDecoder  ; work         ;
@@ -223,7 +222,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1     ;
+; Total registers                              ; 0     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -238,17 +237,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 1                           ;
-;     plain             ; 1                           ;
-; arriav_lcell_comb     ; 49                          ;
-;     normal            ; 49                          ;
-;         1 data inputs ; 5                           ;
-;         2 data inputs ; 16                          ;
-;         4 data inputs ; 28                          ;
+; arriav_lcell_comb     ; 28                          ;
+;     normal            ; 28                          ;
+;         5 data inputs ; 28                          ;
 ; boundary_port         ; 39                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 2.51                        ;
+; Max LUT depth         ; 1.00                        ;
+; Average LUT depth     ; 1.00                        ;
 +-----------------------+-----------------------------+
 
 
@@ -267,7 +262,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Tue Oct 15 13:39:09 2024
+    Info: Processing started: Sun Oct 20 13:45:44 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab03 -c lab03
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -277,16 +272,13 @@ Info (12021): Found 2 design units, including 1 entities, in source file part2.v
     Info (12022): Found design unit 1: Part2-behavorial File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/Part2.vhd Line: 14
     Info (12023): Found entity 1: Part2 File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/Part2.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file part3.vhd
-    Info (12022): Found design unit 1: Part3-behavorial File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/Part3.vhd Line: 14
-    Info (12023): Found entity 1: Part3 File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/Part3.vhd Line: 6
+    Info (12022): Found design unit 1: Part3-behavioral File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/Part3.vhd Line: 12
+    Info (12023): Found entity 1: Part3 File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/Part3.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file segdecoder.vhd
     Info (12022): Found design unit 1: SegDecoder-behavorial File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/SegDecoder.vhd Line: 12
     Info (12023): Found entity 1: SegDecoder File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/SegDecoder.vhd Line: 6
-Info (12021): Found 2 design units, including 1 entities, in source file buttontoggle.vhd
-    Info (12022): Found design unit 1: ButtonToggle-Behavioral File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/ButtonToggle.vhd Line: 11
-    Info (12023): Found entity 1: ButtonToggle File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/ButtonToggle.vhd Line: 4
 Info (12127): Elaborating entity "Part3" for the top level hierarchy
-Info (12128): Elaborating entity "SegDecoder" for hierarchy "SegDecoder:hex0_decoder" File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/Part3.vhd Line: 53
+Info (12128): Elaborating entity "SegDecoder" for hierarchy "SegDecoder:hex0_decoder" File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/Part3.vhd Line: 55
 Info (286030): Timing-Driven Synthesis is running
 Warning (20013): Ignored 24 assignments for entity "DE10_Standard" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity DE10_Standard -section_id Top was ignored
@@ -341,16 +333,16 @@ Warning (20013): Ignored 24 assignments for entity "de10" -- entity does not exi
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/Part3.vhd Line: 8
-    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/Part3.vhd Line: 8
-Info (21057): Implemented 84 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/Part3.vhd Line: 6
+    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/Part3.vhd Line: 6
+Info (21057): Implemented 67 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
     Info (21059): Implemented 28 output pins
-    Info (21061): Implemented 45 logic cells
+    Info (21061): Implemented 28 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 54 warnings
-    Info: Peak virtual memory: 4892 megabytes
-    Info: Processing ended: Tue Oct 15 13:39:20 2024
+    Info: Peak virtual memory: 4888 megabytes
+    Info: Processing ended: Sun Oct 20 13:45:55 2024
     Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:16
+    Info: Total CPU time (on all processors): 00:00:15
 
 

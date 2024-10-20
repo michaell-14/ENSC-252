@@ -1,84 +1,80 @@
--- Michael Lange, 301580599; Trevor Ruttan, 301580889; Rohin Gill, 301582525;
-
 library IEEE;
 use ieee.std_logic_1164.all;
 
-entity Part3 is 
-	port (
-		SW : in std_logic_vector(9 downto 0);      -- 10 switches as input (only 8 are used)
-		KEY : in std_logic_vector(0 downto 0);      -- Push button
-		HEX0, HEX1, HEX4, HEX5 : out std_logic_vector(6 downto 0)  -- Outputs for four 7-segment displays
-	);
+entity Part3 is
+    port (
+        SW : in std_logic_vector(9 downto 0);      -- 10 switches as input (only 8 are used)
+        KEY : in std_logic_vector(0 downto 0);     -- Push button input (KEY[0])
+        HEX0, HEX1, HEX4, HEX5 : out std_logic_vector(6 downto 0)  -- Outputs for four 7-segment displays
+    );
 end Part3;
 
-architecture behavorial of Part3 is 
-	-- Declaration of an internal signal (not used here, but declared as D and Y)
-	-- Component declaration of SegDecoder
-	
-	component SegDecoder
-		port (
-			D : in std_logic_vector(3 downto 0);  -- 4-bit input for decoding input
-			Y : out std_logic_vector(6 downto 0)  -- 7-bit output for 7-segment display
-		);
-	end component;
-	
-	--toggle signal
-	-- := is for variable assignment; <= is for signal assignment
-	signal toggle_state : std_logic := '0';  -- Signal to store the toggle state (0 or 1)
-	signal prev_key : std_logic := '0';      -- Signal to store the previous key state for edge detection
+architecture behavioral of Part3 is
+    component SegDecoder
+        port (
+            D : in std_logic_vector(3 downto 0);  -- 4-bit input for decoding input
+            Y : out std_logic_vector(6 downto 0)  -- 7-bit output for 7-segment display
+        );
+    end component;
 
-	--signal for controlling which disp using
-	signal hex0_but, hex1_but : std_logic_vector(3 downto 0);
-	signal hex4_but, hex5_but : std_logic_vector(3 downto 0);
+    -- Signals for decoded output
+    signal hex0_out, hex1_out, hex4_out, hex5_out : std_logic_vector(6 downto 0);
+
+    -- Signals for the data to be sent to the decoder
+    signal hex0_but, hex1_but, hex4_but, hex5_but : std_logic_vector(3 downto 0);
 
 begin
-	-- Process to toggle the state on rising edge of KEY(0)
-	-- RisingEdge dectects a change in signal
-	-- Is using a flip flop in this process
-	process(KEY)
-	begin
-		if rising_edge(KEY(0)) then
-			toggle_state <= NOT toggle_state;  -- Flip the state on rising edge
-		end if;
-	end process;
 
-	--conditional signal hex0, hex1, hex4, hex5
-	hex0_but <= SW(3 downto 0) when toggle_state = '0' else (others => '0');  -- Control HEX0 or clear
-	hex1_but <= SW(7 downto 4) when toggle_state = '0' else (others => '0');  -- Control HEX1 or clear
-	hex4_but <= SW(3 downto 0) when toggle_state = '1' else (others => '0');  -- Control HEX4 or clear
-	hex5_but <= SW(7 downto 4) when toggle_state = '1' else (others => '0');  -- Control HEX5 or clear
+    -- Assign switch values based on the state of the KEY button
+    process(KEY, SW)
+    begin
+        if (KEY(0) = '1') then
+            -- If button is pressed, display values on HEX0 and HEX1
+            hex0_but <= SW(3 downto 0);  -- Lower 4 bits of SW for HEX0
+            hex1_but <= SW(7 downto 4);  -- Upper 4 bits of SW for HEX1
+            -- Blank HEX4 and HEX5
+            hex4_but <= "0000";
+            hex5_but <= "0000";
+        else
+            -- If button is not pressed, display values on HEX4 and HEX5
+            hex4_but <= SW(3 downto 0);  -- Lower 4 bits of SW for HEX4
+            hex5_but <= SW(7 downto 4);  -- Upper 4 bits of SW for HEX5
+            -- Blank HEX0 and HEX1
+            hex0_but <= "0000";
+            hex1_but <= "0000";
+        end if;
+    end process;
 
+    -- Assign display values based on the decoded outputs
+    HEX0 <= hex0_out when (KEY(0) = '1') else "1111111";  -- Display value or blank when KEY is not pressed
+    HEX1 <= hex1_out when (KEY(0) = '1') else "1111111";
+    HEX4 <= hex4_out when (KEY(0) = '0') else "1111111";
+    HEX5 <= hex5_out when (KEY(0) = '0') else "1111111";
 
-	
-	-- Instance of SegDecoder for HEX0
-	-- The lower 4 switches (SW(3 downto 0)) are connected to the decoder's input (D)
-	-- and the decoder's output (Y) is connected to HEX0, controlling the first display.
-	hex0_decoder : SegDecoder
-	port map (
-		D => hex0_but,   -- Lower 4 switches control HEX0
-		Y => HEX0              -- Output to the first 7-segment display
-	);
+    -- Instances of SegDecoder for HEX0 and HEX1
+    hex0_decoder : SegDecoder
+        port map (
+            D => hex0_but,
+            Y => hex0_out
+        );
 
-	-- Instance of SegDecoder for HEX1
-	-- The next 4 switches (SW(7 downto 4)) are connected to the decoder's input (D)
-	-- and the decoder's output (Y) is connected to HEX1, controlling the second display.
-	hex1_decoder : SegDecoder
-	port map (
-		D => hex1_but,   -- Upper 4 switches control HEX1
-		Y => HEX1             -- Output to the second 7-segment display
-	);
-	
-	hex4_decoder : SegDecoder
-	port map (
-		D => hex4_but,   
-		Y => HEX4
-	);
-	
-	hex5_decoder : SegDecoder
-	port map (
-		D => hex5_but,   
-		Y => HEX5        
-	);
-	
+    hex1_decoder : SegDecoder
+        port map (
+            D => hex1_but,
+            Y => hex1_out
+        );
 
-end behavorial;
+    -- Instances of SegDecoder for HEX4 and HEX5
+    hex4_decoder : SegDecoder
+        port map (
+            D => hex4_but,
+            Y => hex4_out
+        );
+
+    hex5_decoder : SegDecoder
+        port map (
+            D => hex5_but,
+            Y => hex5_out
+        );
+
+end behavioral;
