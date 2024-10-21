@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab03
-Sun Oct 20 13:45:55 2024
+Mon Oct 21 11:09:20 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Oct 20 13:45:55 2024          ;
+; Analysis & Synthesis Status     ; Successful - Mon Oct 21 11:09:20 2024          ;
 ; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                   ; lab03                                          ;
 ; Top-level Entity Name           ; Part3                                          ;
@@ -262,7 +262,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Sun Oct 20 13:45:44 2024
+    Info: Processing started: Mon Oct 21 11:09:07 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab03 -c lab03
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -341,8 +341,8 @@ Info (21057): Implemented 67 device resources after synthesis - the final resour
     Info (21061): Implemented 28 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 54 warnings
     Info: Peak virtual memory: 4888 megabytes
-    Info: Processing ended: Sun Oct 20 13:45:55 2024
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Processing ended: Mon Oct 21 11:09:20 2024
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:16
 
 
