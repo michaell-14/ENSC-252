@@ -1,0 +1,7 @@
+--michael lange, 301580599; trevor ruttan, 123456789; rohin gill, 123456789;
+
+library IEEE;
+use ieee.std_logic_1164.all;
+
+entity RippleCarry is 
+	
