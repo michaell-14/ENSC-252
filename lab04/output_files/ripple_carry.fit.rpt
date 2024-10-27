@@ -1,5 +1,5 @@
 Fitter report for ripple_carry
-Sun Oct 27 10:30:07 2024
+Sun Oct 27 10:39:53 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -59,7 +59,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +---------------------------------+------------------------------------------------+
-; Fitter Status                   ; Successful - Sun Oct 27 10:30:07 2024          ;
+; Fitter Status                   ; Successful - Sun Oct 27 10:39:53 2024          ;
 ; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                   ; ripple_carry                                   ;
 ; Top-level Entity Name           ; ripple_top                                     ;
@@ -1998,7 +1998,7 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "VGA_R[7]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_SYNC_N" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_VS" is assigned to location or region, but does not exist in design
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:07
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:06
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'ripple_carry.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
 Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
@@ -2018,7 +2018,7 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (11888): Total time spent on timing analysis during the Fitter is 0.22 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
@@ -2028,10 +2028,10 @@ Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:02
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/output_files/ripple_carry.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 154 warnings
-    Info: Peak virtual memory: 7800 megabytes
-    Info: Processing ended: Sun Oct 27 10:30:07 2024
-    Info: Elapsed time: 00:00:28
-    Info: Total CPU time (on all processors): 00:01:28
+    Info: Peak virtual memory: 7779 megabytes
+    Info: Processing ended: Sun Oct 27 10:39:53 2024
+    Info: Elapsed time: 00:00:26
+    Info: Total CPU time (on all processors): 00:01:25
 
 
 +----------------------------+

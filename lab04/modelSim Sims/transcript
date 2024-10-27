@@ -1,33 +1,18 @@
-# Compile of ripple_carry.vhd was successful.
-vsim -gui work.ripple_carry
-# vsim -gui work.ripple_carry 
-# Start time: 18:05:18 on Oct 26,2024
+# Compile of full_adder.vhd was successful.
+# Compile of full_adderTB.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.fulladder_tb
+# vsim -gui work.fulladder_tb 
+# Start time: 11:08:48 on Oct 27,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.ripple_carry(ripplecarry)
+# Loading work.fulladder_tb(behaviour)
 # Loading work.fulladder(adderfunc)
-view -new wave
-# -new not supported on PE
-add wave -position insertpoint  \
-sim:/ripple_carry/c1
-add wave -position insertpoint  \
-sim:/ripple_carry/c1 \
-sim:/ripple_carry/c2 \
-sim:/ripple_carry/c3 \
-sim:/ripple_carry/Cin \
-sim:/ripple_carry/Cout \
-sim:/ripple_carry/s0 \
-sim:/ripple_carry/s1 \
-sim:/ripple_carry/s2 \
-sim:/ripple_carry/s3 \
-sim:/ripple_carry/x0 \
-sim:/ripple_carry/x1 \
-sim:/ripple_carry/x2 \
-sim:/ripple_carry/x3 \
-sim:/ripple_carry/y0 \
-sim:/ripple_carry/y1 \
-sim:/ripple_carry/y2 \
-sim:/ripple_carry/y3
-# End time: 18:15:14 on Oct 26,2024, Elapsed time: 0:09:56
-# Errors: 0, Warnings: 5
+add wave sim:/fulladder_tb/*
+run -all
+# ** Failure: Simulation ended
+#    Time: 180 ns  Iteration: 0  Process: /fulladder_tb/stimulus File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/modelSim Sims/full_adderTB.vhd
+# Break in Process stimulus at C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/modelSim Sims/full_adderTB.vhd line 78
+# End time: 11:10:54 on Oct 27,2024, Elapsed time: 0:02:06
+# Errors: 1, Warnings: 7

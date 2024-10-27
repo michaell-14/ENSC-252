@@ -8,18 +8,18 @@ SW[5] => ripple_carry:UUT.y[1]
 SW[6] => ripple_carry:UUT.y[2]
 SW[7] => ripple_carry:UUT.y[3]
 SW[8] => ripple_carry:UUT.Cin
-LEDR[0] << ripple_carry:UUT.s[0]
-LEDR[1] << ripple_carry:UUT.s[1]
-LEDR[2] << ripple_carry:UUT.s[2]
-LEDR[3] << ripple_carry:UUT.s[3]
-LEDR[4] << ripple_carry:UUT.Cout
-HEX0[0] << Mux6.DB_MAX_OUTPUT_PORT_TYPE
-HEX0[1] << Mux5.DB_MAX_OUTPUT_PORT_TYPE
-HEX0[2] << Mux4.DB_MAX_OUTPUT_PORT_TYPE
-HEX0[3] << Mux3.DB_MAX_OUTPUT_PORT_TYPE
-HEX0[4] << Mux2.DB_MAX_OUTPUT_PORT_TYPE
-HEX0[5] << Mux1.DB_MAX_OUTPUT_PORT_TYPE
-HEX0[6] << Mux0.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[0] <= ripple_carry:UUT.s[0]
+LEDR[1] <= ripple_carry:UUT.s[1]
+LEDR[2] <= ripple_carry:UUT.s[2]
+LEDR[3] <= ripple_carry:UUT.s[3]
+LEDR[4] <= ripple_carry:UUT.Cout
+HEX0[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ripple_top|ripple_carry:UUT

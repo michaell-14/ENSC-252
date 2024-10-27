@@ -10,36 +10,36 @@ z2
 cModel Technology
 dC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab2Tutorial
 Efulladder
-Z0 w1729540936
+Z0 w1730050756
 Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 3
+!i122 11
 Z3 dC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/modelSim Sims
-Z4 8C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/full_adder.vhd
-Z5 FC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/full_adder.vhd
+Z4 8C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/modelSim Sims/full_adder.vhd
+Z5 FC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/modelSim Sims/full_adder.vhd
 l0
-L6 1
-VmH2bELeidXDJeQN4NDHi?2
-!s100 XZb9D3mHCHh[TGEf0980Y0
+L5 1
+V>dGAImX@4LgdTS_@W8hfE2
+!s100 [9oWfI;X4U=TjzT:E8[0A2
 Z6 OV;C;2020.1;71
 32
-Z7 !s110 1729980806
+Z7 !s110 1730052493
 !i10b 1
-Z8 !s108 1729980806.000000
-Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/full_adder.vhd|
-Z10 !s107 C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/full_adder.vhd|
+Z8 !s108 1730052493.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/modelSim Sims/full_adder.vhd|
+Z10 !s107 C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/modelSim Sims/full_adder.vhd|
 !i113 1
 Z11 o-work work -2002 -explicit
 Z12 tExplicit 1 CvgOpt 0
 Aadderfunc
 R1
 R2
-DEx4 work 9 fulladder 0 22 mH2bELeidXDJeQN4NDHi?2
-!i122 3
-l14
-L13 8
-Vee^;on5U?HeA:i_9CK3;31
-!s100 L=9QFOi<W6Y;ca2LQd17z3
+DEx4 work 9 fulladder 0 22 >dGAImX@4LgdTS_@W8hfE2
+!i122 11
+l13
+L12 8
+VzUP3U0CT7cVAaPPza<4P72
+!s100 lZcTcIC^abA3;9FU8CGfC0
 R6
 32
 R7
@@ -51,84 +51,129 @@ R10
 R11
 R12
 Efulladder_tb
-Z13 w1729980803
+R0
 R1
 R2
-!i122 4
+!i122 12
 R3
-Z14 8C:\Users\micha\OneDrive\Documents\GitHub\ENSC-252\lab04\full_adderTB.vhd
-Z15 FC:\Users\micha\OneDrive\Documents\GitHub\ENSC-252\lab04\full_adderTB.vhd
+Z13 8C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/modelSim Sims/full_adderTB.vhd
+Z14 FC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/modelSim Sims/full_adderTB.vhd
 l0
-L11 1
-V;g:GP^i13EHkl92d<T]Gb1
-!s100 8oJE:>6iGT5e_m6<YJTBA1
+L12 1
+V`7_ZDOfnV9^mn2cQPS0:D3
+!s100 8Zk@ED@GkZB5i2P3Ga@GB3
 R6
 32
-Z16 !s110 1729980807
+R7
 !i10b 1
 R8
-Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\micha\OneDrive\Documents\GitHub\ENSC-252\lab04\full_adderTB.vhd|
-Z18 !s107 C:\Users\micha\OneDrive\Documents\GitHub\ENSC-252\lab04\full_adderTB.vhd|
+Z15 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/modelSim Sims/full_adderTB.vhd|
+!s107 C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/modelSim Sims/full_adderTB.vhd|
 !i113 1
 R11
 R12
 Abehaviour
 R1
 R2
-DEx4 work 12 fulladder_tb 0 22 ;g:GP^i13EHkl92d<T]Gb1
-!i122 4
-l27
-L14 76
-VXf@im_CEKR9A@MG]U;_Te2
-!s100 ngl8jDPnF=n7Fo31S`ZKQ1
+Z16 DEx4 work 12 fulladder_tb 0 22 `7_ZDOfnV9^mn2cQPS0:D3
+!i122 12
+l28
+Z17 L15 76
+Z18 VPmWl5Yn5^EPZihbV2z1hg2
+Z19 !s100 zbH36J50fcEnM1:RWhRfF1
 R6
 32
-R16
+R7
 !i10b 1
 R8
-R17
-R18
+R15
+Z20 !s107 C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/modelSim Sims/full_adderTB.vhd|
 !i113 1
 R11
 R12
 Eripple_carry
-Z19 w1729983356
+Z21 w1730050754
 R1
 R2
-!i122 5
+!i122 9
 R3
-Z20 8C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/ripple_carry.vhd
-Z21 FC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/ripple_carry.vhd
+Z22 8C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/Lab04_G08/ripple_carry.vhd
+Z23 FC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/Lab04_G08/ripple_carry.vhd
 l0
-L6 1
-VGW`=1_05IoLlBN`m7U^OL0
-!s100 OoA?TXhC0zCSWLLNdKcUF2
+L5 1
+V;`9X:GE0YcF6GiBCb2f?B2
+!s100 cGR1@Z]9Omfj=CmU`NnY61
 R6
 32
-Z22 !s110 1729991083
+Z24 !s110 1730052401
 !i10b 1
-Z23 !s108 1729991082.000000
-Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/ripple_carry.vhd|
-!s107 C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/ripple_carry.vhd|
+Z25 !s108 1730052401.000000
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/Lab04_G08/ripple_carry.vhd|
+Z27 !s107 C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/Lab04_G08/ripple_carry.vhd|
 !i113 1
 R11
 R12
 Aripplecarry
 R1
 R2
-DEx4 work 12 ripple_carry 0 22 GW`=1_05IoLlBN`m7U^OL0
-!i122 5
-l26
-L16 18
-VG4[XY5^]BMJ8h2lCE0>m60
-!s100 B>RS0ZZ8WA=fhLQA=RPRT1
+DEx4 work 12 ripple_carry 0 22 ;`9X:GE0YcF6GiBCb2f?B2
+!i122 9
+l24
+L14 18
+VOMd17FaaDQ7RjSBYGLKEO2
+!s100 YZaQ[QCa9T4iXJ]N6DZ_T1
 R6
 32
-R22
-!i10b 1
-R23
 R24
-Z25 !s107 C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/ripple_carry.vhd|
+!i10b 1
+R25
+R26
+R27
+!i113 1
+R11
+R12
+Eripple_top
+Z28 w1730050757
+Z29 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z30 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R1
+R2
+!i122 10
+R3
+Z31 8C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/Lab04_G08/ripple_top.vhd
+Z32 FC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/Lab04_G08/ripple_top.vhd
+l0
+L7 1
+VJHeF:l7S0ig^K<7nP][R22
+!s100 CL3Ef<FXX4DW`8zMkYc;;1
+R6
+32
+R24
+!i10b 1
+R25
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/Lab04_G08/ripple_top.vhd|
+Z34 !s107 C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/Lab04_G08/ripple_top.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R29
+R30
+R1
+R2
+DEx4 work 10 ripple_top 0 22 JHeF:l7S0ig^K<7nP][R22
+!i122 10
+l59
+L15 68
+V?[F4j=KiWad=Faih`d?8L0
+!s100 3gM[[W<]I1>NE1RgbXR1j1
+R6
+32
+R24
+!i10b 1
+R25
+R33
+R34
 !i113 1
 R11
 R12

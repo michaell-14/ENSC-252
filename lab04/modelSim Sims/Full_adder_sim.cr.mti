@@ -1,0 +1,17 @@
+{C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/modelSim Sims/full_adderTB.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/modelSim Sims/full_adderTB.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity FullAdder_tb
+-- Compiling architecture Behaviour of FullAdder_tb
+
+} {} {}} {C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/modelSim Sims/full_adder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/modelSim Sims/full_adder.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity FullAdder
+-- Compiling architecture adderFunc of FullAdder
+
+} {} {}}

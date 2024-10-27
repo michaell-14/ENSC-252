@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition"
 
--- DATE "10/27/2024 10:30:19"
+-- DATE "10/27/2024 10:40:04"
 
 -- 
 -- Device: Altera 5CSXFC6D6F31C6 Package FBGA896
@@ -37,8 +37,8 @@ USE IEEE.STD_LOGIC_1164.ALL;
 ENTITY 	ripple_top IS
     PORT (
 	SW : IN std_logic_vector(8 DOWNTO 0);
-	LEDR : BUFFER std_logic_vector(4 DOWNTO 0);
-	HEX0 : BUFFER std_logic_vector(6 DOWNTO 0)
+	LEDR : OUT std_logic_vector(4 DOWNTO 0);
+	HEX0 : OUT std_logic_vector(6 DOWNTO 0)
 	);
 END ripple_top;
 
