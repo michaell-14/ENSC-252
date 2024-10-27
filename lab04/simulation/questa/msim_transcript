@@ -1,0 +1,70 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2023.3 win64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do ripple_carry_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2023.3 Lib Mapping Utility 2023.07 Jul 17 2023
+# vmap work rtl_work 
+# Copying c:/intelfpga_lite/23.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/ripple_carry.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 17:58:12 on Oct 26,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/ripple_carry.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ripple_carry
+# -- Compiling architecture RippleCarry of ripple_carry
+# End time: 17:58:12 on Oct 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/full_adder.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 17:58:12 on Oct 26,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/full_adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FullAdder
+# -- Compiling architecture adderFunc of FullAdder
+# End time: 17:58:12 on Oct 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.ripple_carry
+# vsim work.ripple_carry 
+# Start time: 17:58:23 on Oct 26,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.ripple_carry(ripplecarry)#1
+run -all
+vsim work.ripple_carry
+# End time: 17:59:06 on Oct 26,2024, Elapsed time: 0:00:43
+# Errors: 0, Warnings: 0
+# vsim work.ripple_carry 
+# Start time: 17:59:06 on Oct 26,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.ripple_carry(ripplecarry)#1
+# End time: 18:01:32 on Oct 26,2024, Elapsed time: 0:02:26
+# Errors: 0, Warnings: 0

@@ -1,0 +1,76 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11e vcom 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/simulation/questa
+T_opt
+!s110 1729983879
+V6jFk_^echLIga8^k910j<0
+04 12 9 work ripple_carry structure 1
+=1-141333536f6d-671d7587-bd-11638
+R0
+!s12b OEM100
+!s124 OEM10U1 
+o-quiet -auto_acc_if_foreign -work work
+tCvgOpt 0
+n@_opt
+OL;O;2023.3;77
+Eripple_carry
+Z2 w1729983412
+Z3 DPx4 ieee 16 vital_primitives 0 22 Y]H?Y_]z4@VoaWAGJ=36m1
+Z4 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 >D>R2d_S6gjU?;50QULVY3
+Z5 DPx4 ieee 12 vital_timing 0 22 6STbz=m1W[80IE06h_el^0
+Z6 DPx8 cyclonev 19 cyclonev_components 0 22 ONcjb[o^6QUa5nInMXF]50
+Z7 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z8 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+Z9 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 imPaHK;ANVA2FmRDgd8SZ0
+!i122 0
+R1
+Z10 8ripple_carry.vho
+Z11 Fripple_carry.vho
+l0
+L37 1
+VoNYz@S=j7V6jHb]E_Lmga3
+!s100 mnjdNH7fZ?OW?^c4IAINl1
+Z12 OL;C;2023.3;77
+31
+Z13 !s110 1729983868
+!i10b 1
+Z14 !s108 1729983868.000000
+Z15 !s90 -reportprogress|300|-93|-work|work|ripple_carry.vho|
+Z16 !s107 ripple_carry.vho|
+!i113 0
+Z17 o-93 -work work
+Z18 tExplicit 1 CvgOpt 0
+Astructure
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 12 ripple_carry 0 22 oNYz@S=j7V6jHb]E_Lmga3
+!i122 0
+l124
+L73 372
+VmkYX1VFaa6]jA<IN0ZK[f2
+!s100 l^HJ?88U;S_YdoT5hNz^82
+R12
+31
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 0
+R17
+R18

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab03
-Mon Oct 21 11:09:20 2024
+Sat Oct 26 19:46:43 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Oct 21 11:09:20 2024          ;
+; Analysis & Synthesis Status     ; Successful - Sat Oct 26 19:46:43 2024          ;
 ; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                   ; lab03                                          ;
 ; Top-level Entity Name           ; Part3                                          ;
@@ -262,7 +262,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Mon Oct 21 11:09:07 2024
+    Info: Processing started: Sat Oct 26 19:46:36 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab03 -c lab03
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -272,13 +272,13 @@ Info (12021): Found 2 design units, including 1 entities, in source file part2.v
     Info (12022): Found design unit 1: Part2-behavorial File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/Part2.vhd Line: 14
     Info (12023): Found entity 1: Part2 File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/Part2.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file part3.vhd
-    Info (12022): Found design unit 1: Part3-behavioral File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/Part3.vhd Line: 12
-    Info (12023): Found entity 1: Part3 File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/Part3.vhd Line: 4
+    Info (12022): Found design unit 1: Part3-behavioral File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/Part3.vhd Line: 14
+    Info (12023): Found entity 1: Part3 File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/Part3.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file segdecoder.vhd
     Info (12022): Found design unit 1: SegDecoder-behavorial File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/SegDecoder.vhd Line: 12
     Info (12023): Found entity 1: SegDecoder File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/SegDecoder.vhd Line: 6
 Info (12127): Elaborating entity "Part3" for the top level hierarchy
-Info (12128): Elaborating entity "SegDecoder" for hierarchy "SegDecoder:hex0_decoder" File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/Part3.vhd Line: 55
+Info (12128): Elaborating entity "SegDecoder" for hierarchy "SegDecoder:hex0_decoder" File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/Part3.vhd Line: 57
 Info (286030): Timing-Driven Synthesis is running
 Warning (20013): Ignored 24 assignments for entity "DE10_Standard" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity DE10_Standard -section_id Top was ignored
@@ -333,16 +333,16 @@ Warning (20013): Ignored 24 assignments for entity "de10" -- entity does not exi
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/Part3.vhd Line: 6
-    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/Part3.vhd Line: 6
+    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/Part3.vhd Line: 8
+    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/Part3.vhd Line: 8
 Info (21057): Implemented 67 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
     Info (21059): Implemented 28 output pins
     Info (21061): Implemented 28 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 54 warnings
-    Info: Peak virtual memory: 4888 megabytes
-    Info: Processing ended: Mon Oct 21 11:09:20 2024
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:16
+    Info: Peak virtual memory: 4887 megabytes
+    Info: Processing ended: Sat Oct 26 19:46:43 2024
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:09
 
 

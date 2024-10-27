@@ -68,7 +68,7 @@ Z16 !s110 1729980807
 !i10b 1
 R8
 Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\micha\OneDrive\Documents\GitHub\ENSC-252\lab04\full_adderTB.vhd|
-!s107 C:\Users\micha\OneDrive\Documents\GitHub\ENSC-252\lab04\full_adderTB.vhd|
+Z18 !s107 C:\Users\micha\OneDrive\Documents\GitHub\ENSC-252\lab04\full_adderTB.vhd|
 !i113 1
 R11
 R12
@@ -87,7 +87,48 @@ R16
 !i10b 1
 R8
 R17
-Z18 !s107 C:\Users\micha\OneDrive\Documents\GitHub\ENSC-252\lab04\full_adderTB.vhd|
+R18
+!i113 1
+R11
+R12
+Eripple_carry
+Z19 w1729983356
+R1
+R2
+!i122 5
+R3
+Z20 8C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/ripple_carry.vhd
+Z21 FC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/ripple_carry.vhd
+l0
+L6 1
+VGW`=1_05IoLlBN`m7U^OL0
+!s100 OoA?TXhC0zCSWLLNdKcUF2
+R6
+32
+Z22 !s110 1729991083
+!i10b 1
+Z23 !s108 1729991082.000000
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/ripple_carry.vhd|
+!s107 C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/ripple_carry.vhd|
+!i113 1
+R11
+R12
+Aripplecarry
+R1
+R2
+DEx4 work 12 ripple_carry 0 22 GW`=1_05IoLlBN`m7U^OL0
+!i122 5
+l26
+L16 18
+VG4[XY5^]BMJ8h2lCE0>m60
+!s100 B>RS0ZZ8WA=fhLQA=RPRT1
+R6
+32
+R22
+!i10b 1
+R23
+R24
+Z25 !s107 C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/ripple_carry.vhd|
 !i113 1
 R11
 R12

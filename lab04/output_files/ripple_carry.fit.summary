@@ -1,20 +1,20 @@
-Fitter Status : Successful - Sat Oct 26 15:11:31 2024
+Fitter Status : Successful - Sun Oct 27 10:30:07 2024
 Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 Revision Name : ripple_carry
-Top-level Entity Name : ripple_carry
+Top-level Entity Name : ripple_top
 Family : Cyclone V
-Device : 5CSEMA5F31C6
+Device : 5CSXFC6D6F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 1 / 32,070 ( < 1 % )
+Logic utilization (in ALMs) : 7 / 41,910 ( < 1 % )
 Total registers : 0
-Total pins : 14 / 457 ( 3 % )
+Total pins : 21 / 499 ( 4 % )
 Total virtual pins : 0
-Total block memory bits : 0 / 4,065,280 ( 0 % )
-Total RAM Blocks : 0 / 397 ( 0 % )
-Total DSP Blocks : 0 / 87 ( 0 % )
-Total HSSI RX PCSs : 0
-Total HSSI PMA RX Deserializers : 0
-Total HSSI TX PCSs : 0
-Total HSSI PMA TX Serializers : 0
-Total PLLs : 0 / 6 ( 0 % )
+Total block memory bits : 0 / 5,662,720 ( 0 % )
+Total RAM Blocks : 0 / 553 ( 0 % )
+Total DSP Blocks : 0 / 112 ( 0 % )
+Total HSSI RX PCSs : 0 / 9 ( 0 % )
+Total HSSI PMA RX Deserializers : 0 / 9 ( 0 % )
+Total HSSI TX PCSs : 0 / 9 ( 0 % )
+Total HSSI PMA TX Serializers : 0 / 9 ( 0 % )
+Total PLLs : 0 / 15 ( 0 % )
 Total DLLs : 0 / 4 ( 0 % )
