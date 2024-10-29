@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition"
 
--- DATE "10/26/2024 21:47:12"
+-- DATE "10/28/2024 12:41:14"
 
 -- 
 -- Device: Altera 5CSXFC6D6F31C6 Package FBGA896
@@ -39,8 +39,8 @@ ENTITY 	ripple_carry IS
 	x : IN std_logic_vector(3 DOWNTO 0);
 	y : IN std_logic_vector(3 DOWNTO 0);
 	Cin : IN std_logic;
-	s : BUFFER std_logic_vector(3 DOWNTO 0);
-	Cout : BUFFER std_logic
+	s : OUT std_logic_vector(3 DOWNTO 0);
+	Cout : OUT std_logic
 	);
 END ripple_carry;
 

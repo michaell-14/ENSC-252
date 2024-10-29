@@ -1,28 +1,4 @@
-|ripple_top
-SW[0] => ripple_carry:UUT.x[0]
-SW[1] => ripple_carry:UUT.x[1]
-SW[2] => ripple_carry:UUT.x[2]
-SW[3] => ripple_carry:UUT.x[3]
-SW[4] => ripple_carry:UUT.y[0]
-SW[5] => ripple_carry:UUT.y[1]
-SW[6] => ripple_carry:UUT.y[2]
-SW[7] => ripple_carry:UUT.y[3]
-SW[8] => ripple_carry:UUT.Cin
-LEDR[0] <= ripple_carry:UUT.s[0]
-LEDR[1] <= ripple_carry:UUT.s[1]
-LEDR[2] <= ripple_carry:UUT.s[2]
-LEDR[3] <= ripple_carry:UUT.s[3]
-LEDR[4] <= ripple_carry:UUT.Cout
-HEX0[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
-HEX0[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
-HEX0[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
-HEX0[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
-HEX0[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
-HEX0[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
-HEX0[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ripple_top|ripple_carry:UUT
+|ripple_carry
 x[0] => FullAdder:FA_0.A
 x[1] => FullAdder:FA_1.A
 x[2] => FullAdder:FA_2.A
@@ -39,7 +15,7 @@ s[3] <= FullAdder:FA_3.sum
 Cout <= FullAdder:FA_3.carry
 
 
-|ripple_top|ripple_carry:UUT|FullAdder:FA_0
+|ripple_carry|FullAdder:FA_0
 A => sum.IN0
 A => carry.IN0
 A => carry.IN0
@@ -53,7 +29,7 @@ sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
 carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ripple_top|ripple_carry:UUT|FullAdder:FA_1
+|ripple_carry|FullAdder:FA_1
 A => sum.IN0
 A => carry.IN0
 A => carry.IN0
@@ -67,7 +43,7 @@ sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
 carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ripple_top|ripple_carry:UUT|FullAdder:FA_2
+|ripple_carry|FullAdder:FA_2
 A => sum.IN0
 A => carry.IN0
 A => carry.IN0
@@ -81,7 +57,7 @@ sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
 carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ripple_top|ripple_carry:UUT|FullAdder:FA_3
+|ripple_carry|FullAdder:FA_3
 A => sum.IN0
 A => carry.IN0
 A => carry.IN0

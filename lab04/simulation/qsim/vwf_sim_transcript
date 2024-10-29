@@ -26,7 +26,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Sat Oct 26 21:47:10 2024
+    Info: Processing started: Mon Oct 28 12:41:12 2024
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ripple_carry -c ripple_carry --vector_source=C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/Waveform.vwf --testbench_file=C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/simulation/qsim/Waveform.vwf.vht
 Warning (20013): Ignored 24 assignments for entity "DE10_Standard" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity DE10_Standard -section_id Top was ignored
@@ -105,7 +105,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Sat Oct 26 21:47:11 2024
+    Info: Processing started: Mon Oct 28 12:41:13 2024
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/simulation/qsim/ ripple_carry -c ripple_carry
 Warning (20013): Ignored 24 assignments for entity "DE10_Standard" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity DE10_Standard -section_id Top was ignored
@@ -162,8 +162,8 @@ Warning (20013): Ignored 24 assignments for entity "de10" -- entity does not exi
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file ripple_carry.vho in folder "C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 51 warnings
-    Info: Peak virtual memory: 4723 megabytes
-    Info: Processing ended: Sat Oct 26 21:47:12 2024
+    Info: Peak virtual memory: 4732 megabytes
+    Info: Processing ended: Mon Oct 28 12:41:14 2024
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -191,7 +191,7 @@ Reading pref.tcl
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 
-# Start time: 21:47:12 on Oct 26,2024
+# Start time: 12:41:15 on Oct 28,2024
 # vcom -work work ripple_carry.vho 
 
 # -- Loading package STANDARD
@@ -214,14 +214,13 @@ Reading pref.tcl
 
 # -- Compiling architecture structure of ripple_carry
 
-# End time: 21:47:13 on Oct 26,2024, Elapsed time: 0:00:01
+# End time: 12:41:16 on Oct 28,2024, Elapsed time: 0:00:01
 
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 
-# Start time: 21:47:13 on Oct 26,2024
-
+# Start time: 12:41:16 on Oct 28,2024
 # vcom -work work Waveform.vwf.vht 
 
 # -- Loading package STANDARD
@@ -234,12 +233,12 @@ Reading pref.tcl
 
 # -- Compiling architecture ripple_carry_arch of ripple_carry_vhd_vec_tst
 
-# End time: 21:47:13 on Oct 26,2024, Elapsed time: 0:00:00
+# End time: 12:41:16 on Oct 28,2024, Elapsed time: 0:00:00
 
 # Errors: 0, Warnings: 0
 
 # vsim -voptargs="+acc" -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.ripple_carry_vhd_vec_tst 
-# Start time: 21:47:13 on Oct 26,2024
+# Start time: 12:41:16 on Oct 28,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -257,7 +256,7 @@ Reading pref.tcl
 
 # after#32
 
-# End time: 21:47:13 on Oct 26,2024, Elapsed time: 0:00:00
+# End time: 12:41:16 on Oct 28,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
@@ -270,7 +269,7 @@ Reading C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/simulation/qsim/
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/simulation/qsim/ripple_carry_20241026214713.sim.vwf
+Writing the resulting VWF to C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/simulation/qsim/ripple_carry_20241028124117.sim.vwf
 
 Finished VCD to VWF conversion.
 

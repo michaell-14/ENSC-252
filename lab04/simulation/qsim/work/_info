@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 dC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/simulation/qsim
 Eripple_carry
-Z1 w1730004432
+Z1 w1730144474
 Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
 Z3 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 3HQPc5MVbmOPN?>a5EBYj2
 Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
@@ -18,19 +18,19 @@ Z5 DPx8 cyclonev 19 cyclonev_components 0 22 jZ]H46BQLgIP5mfRTO`3B1
 Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z7 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 Z8 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 ^Ch;U@;bMk1;>A2B<UV`k2
-!i122 38
+!i122 58
 R0
 Z9 8ripple_carry.vho
 Z10 Fripple_carry.vho
 l0
 Z11 L37 1
-VPzO5g^5_Ti0nd;hN_QX9V1
-!s100 AHZ2C6]6Cm9f8zZ@SoXH;3
+VbYYB0cmNAC@]40nO?<YoF2
+!s100 _`_DMhR7kPN>lg?VHP8@@0
 Z12 OV;C;2020.1;71
 32
-Z13 !s110 1730004433
+Z13 !s110 1730144476
 !i10b 1
-Z14 !s108 1730004432.000000
+Z14 !s108 1730144475.000000
 Z15 !s90 -work|work|ripple_carry.vho|
 Z16 !s107 ripple_carry.vho|
 !i113 1
@@ -44,8 +44,8 @@ R5
 R6
 R7
 R8
-DEx4 work 12 ripple_carry 0 22 PzO5g^5_Ti0nd;hN_QX9V1
-!i122 38
+DEx4 work 12 ripple_carry 0 22 bYYB0cmNAC@]40nO?<YoF2
+!i122 58
 l106
 L64 356
 Vedj0_c:8cJJjKeh1UI@MD2
@@ -61,10 +61,10 @@ R16
 R17
 R18
 Eripple_carry_vhd_vec_tst
-Z19 w1730004431
+Z19 w1730144473
 R6
 R7
-!i122 39
+!i122 59
 R0
 Z20 8Waveform.vwf.vht
 Z21 FWaveform.vwf.vht
@@ -76,7 +76,7 @@ R12
 32
 R13
 !i10b 1
-Z23 !s108 1730004433.000000
+Z23 !s108 1730144476.000000
 Z24 !s90 -work|work|Waveform.vwf.vht|
 Z25 !s107 Waveform.vwf.vht|
 !i113 1
@@ -86,11 +86,11 @@ Aripple_carry_arch
 R6
 R7
 Z26 DEx4 work 24 ripple_carry_vhd_vec_tst 0 22 N`[JWCNjCN2^ga4?W9SiG2
-!i122 39
+!i122 59
 l51
-Z27 L34 109
-Z28 Vg>BM<`dZLAhbLjTo1A_G01
-Z29 !s100 cYjWh`JV8X4kNBPckGBEk2
+Z27 L34 119
+Z28 VRUoEiVC_W;DRM9BnJ>zLR3
+Z29 !s100 UT<4S?O>B7e_^h6T]gEBi3
 R12
 32
 R13
@@ -102,7 +102,7 @@ R25
 R17
 R18
 Eripple_top
-Z30 w1730002911
+Z30 w1730143224
 R2
 R3
 R4
@@ -110,19 +110,19 @@ R5
 R6
 R7
 R8
-!i122 24
+!i122 52
 R0
 R9
 R10
 l0
 R11
-V5eOG2@;7APM4RF85XGOke1
-!s100 WjGS:nWRK=coiFET0=7Ni1
+VX;D:J9BbR?1gSN2KM5T6Q3
+!s100 YMCALZ0VTdQ[b^<^FY]Xn0
 R12
 32
-Z31 !s110 1730002912
+Z31 !s110 1730143226
 !i10b 1
-Z32 !s108 1730002912.000000
+Z32 !s108 1730143226.000000
 R15
 R16
 !i113 1
@@ -136,12 +136,12 @@ R5
 R6
 R7
 R8
-DEx4 work 10 ripple_top 0 22 5eOG2@;7APM4RF85XGOke1
-!i122 24
+DEx4 work 10 ripple_top 0 22 X;D:J9BbR?1gSN2KM5T6Q3
+!i122 52
 l121
 L69 590
-ViQWRVg@V90UBgN]kP4`H82
-!s100 5I;9c^LZcKZRKUlMngTX`3
+VN2gCJ35o7W]:bPT>3F:aF3
+!s100 mW<`obNXWOQFo`Gde1C=N2
 R12
 32
 R31
@@ -153,10 +153,10 @@ R16
 R17
 R18
 Eripple_top_vhd_vec_tst
-Z33 w1730002910
+Z33 w1730143223
 R6
 R7
-!i122 25
+!i122 53
 R0
 R20
 R21
@@ -178,11 +178,11 @@ Aripple_top_arch
 R6
 R7
 DEx4 work 22 ripple_top_vhd_vec_tst 0 22 W0[63JK3dX0g[Hg>1RNJO2
-!i122 25
+!i122 53
 l47
 L34 22
-V@?9NUo8n6L`?GnjA0aEN72
-!s100 =GUWOS]9A8TA:N]bJ=OLl0
+VjQhHJYTd`1W^5UP?SYV1Y2
+!s100 <VG==ef[D47W=70lS[_4H3
 R12
 32
 R31

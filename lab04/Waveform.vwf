@@ -25,7 +25,7 @@ quit -f
 vlib work
 vcom -work work ripple_carry.vho
 vcom -work work Waveform.vwf.vht
-vsim -voptargs="+acc" -c -t 1ps -sdfnoerror -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.ripple_carry_vhd_vec_tst
+vsim -novopt -c -t 1ps -sdfmax ripple_carry_vhd_vec_tst/i1=ripple_carry_vhd.sdo -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.ripple_carry_vhd_vec_tst
 vcd file -direction ripple_carry.msim.vcd
 vcd add -internal ripple_carry_vhd_vec_tst/*
 vcd add -internal ripple_carry_vhd_vec_tst/i1/*
@@ -69,7 +69,7 @@ HEADER
 	VERSION = 1;
 	TIME_UNIT = ns;
 	DATA_OFFSET = 0.0;
-	DATA_DURATION = 300.0;
+	DATA_DURATION = 1000.0;
 	SIMULATION_TIME = 0.0;
 	GRID_PHASE = 0.0;
 	GRID_PERIOD = 10.0;
@@ -251,8 +251,9 @@ TRANSITION_LIST("Cin")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 200.0;
-		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 400.0;
+		LEVEL 1 FOR 540.0;
+		LEVEL 0 FOR 60.0;
 	}
 }
 
@@ -261,7 +262,7 @@ TRANSITION_LIST("Cout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 300.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -270,7 +271,7 @@ TRANSITION_LIST("s[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 300.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -279,7 +280,7 @@ TRANSITION_LIST("s[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 300.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -288,7 +289,7 @@ TRANSITION_LIST("s[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 300.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -297,7 +298,7 @@ TRANSITION_LIST("s[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 300.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -306,8 +307,9 @@ TRANSITION_LIST("x[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 280.0;
+		LEVEL 1 FOR 300.0;
+		LEVEL 0 FOR 420.0;
 	}
 }
 
@@ -316,9 +318,9 @@ TRANSITION_LIST("x[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 100.0;
-		LEVEL 0 FOR 100.0;
+		LEVEL 0 FOR 280.0;
+		LEVEL 1 FOR 120.0;
+		LEVEL 0 FOR 600.0;
 	}
 }
 
@@ -327,8 +329,9 @@ TRANSITION_LIST("x[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 280.0;
+		LEVEL 1 FOR 300.0;
+		LEVEL 0 FOR 420.0;
 	}
 }
 
@@ -337,9 +340,9 @@ TRANSITION_LIST("x[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 100.0;
-		LEVEL 0 FOR 100.0;
+		LEVEL 0 FOR 280.0;
+		LEVEL 1 FOR 120.0;
+		LEVEL 0 FOR 600.0;
 	}
 }
 
@@ -348,9 +351,9 @@ TRANSITION_LIST("y[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 100.0;
-		LEVEL 0 FOR 100.0;
+		LEVEL 0 FOR 280.0;
+		LEVEL 1 FOR 120.0;
+		LEVEL 0 FOR 600.0;
 	}
 }
 
@@ -359,8 +362,9 @@ TRANSITION_LIST("y[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 280.0;
+		LEVEL 1 FOR 300.0;
+		LEVEL 0 FOR 420.0;
 	}
 }
 
@@ -369,9 +373,9 @@ TRANSITION_LIST("y[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 100.0;
-		LEVEL 0 FOR 100.0;
+		LEVEL 0 FOR 280.0;
+		LEVEL 1 FOR 120.0;
+		LEVEL 0 FOR 600.0;
 	}
 }
 
@@ -380,8 +384,9 @@ TRANSITION_LIST("y[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 280.0;
+		LEVEL 1 FOR 300.0;
+		LEVEL 0 FOR 420.0;
 	}
 }
 
@@ -438,7 +443,7 @@ DISPLAY_LINE
 DISPLAY_LINE
 {
 	CHANNEL = "y";
-	EXPAND_STATUS = COLLAPSED;
+	EXPAND_STATUS = EXPANDED;
 	RADIX = Binary;
 	TREE_INDEX = 5;
 	TREE_LEVEL = 0;

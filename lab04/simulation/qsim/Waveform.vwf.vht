@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "10/26/2024 21:47:11"
+-- Generated on "10/28/2024 12:41:13"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          ripple_carry
 -- 
@@ -42,8 +42,8 @@ SIGNAL y : STD_LOGIC_VECTOR(3 DOWNTO 0);
 COMPONENT ripple_carry
 	PORT (
 	Cin : IN STD_LOGIC;
-	Cout : BUFFER STD_LOGIC;
-	s : BUFFER STD_LOGIC_VECTOR(3 DOWNTO 0);
+	Cout : OUT STD_LOGIC;
+	s : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
 	x : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
 	y : IN STD_LOGIC_VECTOR(3 DOWNTO 0)
 	);
@@ -62,17 +62,19 @@ BEGIN
 t_prcs_x_3: PROCESS
 BEGIN
 	x(3) <= '0';
-	WAIT FOR 100000 ps;
+	WAIT FOR 280000 ps;
 	x(3) <= '1';
+	WAIT FOR 300000 ps;
+	x(3) <= '0';
 WAIT;
 END PROCESS t_prcs_x_3;
 -- x[2]
 t_prcs_x_2: PROCESS
 BEGIN
 	x(2) <= '0';
-	WAIT FOR 100000 ps;
+	WAIT FOR 280000 ps;
 	x(2) <= '1';
-	WAIT FOR 100000 ps;
+	WAIT FOR 120000 ps;
 	x(2) <= '0';
 WAIT;
 END PROCESS t_prcs_x_2;
@@ -80,17 +82,19 @@ END PROCESS t_prcs_x_2;
 t_prcs_x_1: PROCESS
 BEGIN
 	x(1) <= '0';
-	WAIT FOR 100000 ps;
+	WAIT FOR 280000 ps;
 	x(1) <= '1';
+	WAIT FOR 300000 ps;
+	x(1) <= '0';
 WAIT;
 END PROCESS t_prcs_x_1;
 -- x[0]
 t_prcs_x_0: PROCESS
 BEGIN
 	x(0) <= '0';
-	WAIT FOR 100000 ps;
+	WAIT FOR 280000 ps;
 	x(0) <= '1';
-	WAIT FOR 100000 ps;
+	WAIT FOR 120000 ps;
 	x(0) <= '0';
 WAIT;
 END PROCESS t_prcs_x_0;
@@ -98,9 +102,9 @@ END PROCESS t_prcs_x_0;
 t_prcs_y_3: PROCESS
 BEGIN
 	y(3) <= '0';
-	WAIT FOR 100000 ps;
+	WAIT FOR 280000 ps;
 	y(3) <= '1';
-	WAIT FOR 100000 ps;
+	WAIT FOR 120000 ps;
 	y(3) <= '0';
 WAIT;
 END PROCESS t_prcs_y_3;
@@ -108,17 +112,19 @@ END PROCESS t_prcs_y_3;
 t_prcs_y_2: PROCESS
 BEGIN
 	y(2) <= '0';
-	WAIT FOR 100000 ps;
+	WAIT FOR 280000 ps;
 	y(2) <= '1';
+	WAIT FOR 300000 ps;
+	y(2) <= '0';
 WAIT;
 END PROCESS t_prcs_y_2;
 -- y[1]
 t_prcs_y_1: PROCESS
 BEGIN
 	y(1) <= '0';
-	WAIT FOR 100000 ps;
+	WAIT FOR 280000 ps;
 	y(1) <= '1';
-	WAIT FOR 100000 ps;
+	WAIT FOR 120000 ps;
 	y(1) <= '0';
 WAIT;
 END PROCESS t_prcs_y_1;
@@ -126,8 +132,10 @@ END PROCESS t_prcs_y_1;
 t_prcs_y_0: PROCESS
 BEGIN
 	y(0) <= '0';
-	WAIT FOR 100000 ps;
+	WAIT FOR 280000 ps;
 	y(0) <= '1';
+	WAIT FOR 300000 ps;
+	y(0) <= '0';
 WAIT;
 END PROCESS t_prcs_y_0;
 
@@ -135,8 +143,10 @@ END PROCESS t_prcs_y_0;
 t_prcs_Cin: PROCESS
 BEGIN
 	Cin <= '0';
-	WAIT FOR 200000 ps;
+	WAIT FOR 400000 ps;
 	Cin <= '1';
+	WAIT FOR 540000 ps;
+	Cin <= '0';
 WAIT;
 END PROCESS t_prcs_Cin;
 END ripple_carry_arch;

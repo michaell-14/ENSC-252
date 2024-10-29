@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ripple_carry
-Sun Oct 27 10:39:26 2024
+Mon Oct 28 12:22:01 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -43,14 +43,14 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Oct 27 10:39:26 2024          ;
+; Analysis & Synthesis Status     ; Successful - Mon Oct 28 12:22:01 2024          ;
 ; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                   ; ripple_carry                                   ;
-; Top-level Entity Name           ; ripple_top                                     ;
+; Top-level Entity Name           ; ripple_carry                                   ;
 ; Family                          ; Cyclone V                                      ;
 ; Logic utilization (in ALMs)     ; N/A                                            ;
 ; Total registers                 ; 0                                              ;
-; Total pins                      ; 21                                             ;
+; Total pins                      ; 14                                             ;
 ; Total virtual pins              ; 0                                              ;
 ; Total block memory bits         ; 0                                              ;
 ; Total DSP Blocks                ; 0                                              ;
@@ -69,7 +69,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSXFC6D6F31C6     ;                    ;
-; Top-level entity name                                                           ; ripple_top         ; ripple_carry       ;
+; Top-level entity name                                                           ; ripple_carry       ; ripple_carry       ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -173,49 +173,47 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------+---------+
 ; ripple_carry.vhd                 ; yes             ; User VHDL File  ; C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/ripple_carry.vhd ;         ;
 ; full_adder.vhd                   ; yes             ; User VHDL File  ; C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/full_adder.vhd   ;         ;
-; ripple_top.vhd                   ; yes             ; User VHDL File  ; C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/ripple_top.vhd   ;         ;
 +----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                       ;
-+---------------------------------------------+-------------------------------------+
-; Resource                                    ; Usage                               ;
-+---------------------------------------------+-------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 7                                   ;
-;                                             ;                                     ;
-; Combinational ALUT usage for logic          ; 13                                  ;
-;     -- 7 input functions                    ; 0                                   ;
-;     -- 6 input functions                    ; 0                                   ;
-;     -- 5 input functions                    ; 4                                   ;
-;     -- 4 input functions                    ; 7                                   ;
-;     -- <=3 input functions                  ; 2                                   ;
-;                                             ;                                     ;
-; Dedicated logic registers                   ; 0                                   ;
-;                                             ;                                     ;
-; I/O pins                                    ; 21                                  ;
-;                                             ;                                     ;
-; Total DSP Blocks                            ; 0                                   ;
-;                                             ;                                     ;
-; Maximum fan-out node                        ; ripple_carry:UUT|FullAdder:FA_0|sum ;
-; Maximum fan-out                             ; 8                                   ;
-; Total fan-out                               ; 87                                  ;
-; Average fan-out                             ; 1.58                                ;
-+---------------------------------------------+-------------------------------------+
++----------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                          ;
++---------------------------------------------+------------------------+
+; Resource                                    ; Usage                  ;
++---------------------------------------------+------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 3                      ;
+;                                             ;                        ;
+; Combinational ALUT usage for logic          ; 6                      ;
+;     -- 7 input functions                    ; 0                      ;
+;     -- 6 input functions                    ; 0                      ;
+;     -- 5 input functions                    ; 4                      ;
+;     -- 4 input functions                    ; 0                      ;
+;     -- <=3 input functions                  ; 2                      ;
+;                                             ;                        ;
+; Dedicated logic registers                   ; 0                      ;
+;                                             ;                        ;
+; I/O pins                                    ; 14                     ;
+;                                             ;                        ;
+; Total DSP Blocks                            ; 0                      ;
+;                                             ;                        ;
+; Maximum fan-out node                        ; FullAdder:FA_1|carry~0 ;
+; Maximum fan-out                             ; 3                      ;
+; Total fan-out                               ; 45                     ;
+; Average fan-out                             ; 1.32                   ;
++---------------------------------------------+------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                             ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------+--------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                         ; Entity Name  ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------+--------------+--------------+
-; |ripple_top                ; 13 (7)              ; 0 (0)                     ; 0                 ; 0          ; 21   ; 0            ; |ripple_top                                 ; ripple_top   ; work         ;
-;    |ripple_carry:UUT|      ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ripple_top|ripple_carry:UUT                ; ripple_carry ; work         ;
-;       |FullAdder:FA_0|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ripple_top|ripple_carry:UUT|FullAdder:FA_0 ; FullAdder    ; work         ;
-;       |FullAdder:FA_1|     ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ripple_top|ripple_carry:UUT|FullAdder:FA_1 ; FullAdder    ; work         ;
-;       |FullAdder:FA_2|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ripple_top|ripple_carry:UUT|FullAdder:FA_2 ; FullAdder    ; work         ;
-;       |FullAdder:FA_3|     ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ripple_top|ripple_carry:UUT|FullAdder:FA_3 ; FullAdder    ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------+--------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                              ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------+--------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name          ; Entity Name  ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------+--------------+--------------+
+; |ripple_carry              ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 14   ; 0            ; |ripple_carry                ; ripple_carry ; work         ;
+;    |FullAdder:FA_0|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ripple_carry|FullAdder:FA_0 ; FullAdder    ; work         ;
+;    |FullAdder:FA_1|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ripple_carry|FullAdder:FA_1 ; FullAdder    ; work         ;
+;    |FullAdder:FA_2|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ripple_carry|FullAdder:FA_2 ; FullAdder    ; work         ;
+;    |FullAdder:FA_3|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ripple_carry|FullAdder:FA_3 ; FullAdder    ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------+--------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -239,16 +237,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 14                          ;
-;     normal            ; 14                          ;
-;         1 data inputs ; 1                           ;
+; arriav_lcell_comb     ; 6                           ;
+;     normal            ; 6                           ;
 ;         3 data inputs ; 2                           ;
-;         4 data inputs ; 7                           ;
 ;         5 data inputs ; 4                           ;
-; boundary_port         ; 21                          ;
+; boundary_port         ; 14                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 3.39                        ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.60                        ;
 +-----------------------+-----------------------------+
 
 
@@ -267,7 +263,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Sun Oct 27 10:39:20 2024
+    Info: Processing started: Mon Oct 28 12:21:50 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ripple_carry -c ripple_carry
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -283,9 +279,8 @@ Info (12021): Found 2 design units, including 1 entities, in source file full_ad
 Info (12021): Found 2 design units, including 1 entities, in source file ripple_top.vhd
     Info (12022): Found design unit 1: ripple_top-behavioral File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/ripple_top.vhd Line: 15
     Info (12023): Found entity 1: ripple_top File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/ripple_top.vhd Line: 7
-Info (12127): Elaborating entity "ripple_top" for the top level hierarchy
-Info (12128): Elaborating entity "ripple_carry" for hierarchy "ripple_carry:UUT" File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/ripple_top.vhd Line: 66
-Info (12128): Elaborating entity "FullAdder" for hierarchy "ripple_carry:UUT|FullAdder:FA_0" File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/ripple_carry.vhd Line: 26
+Info (12127): Elaborating entity "ripple_carry" for the top level hierarchy
+Info (12128): Elaborating entity "FullAdder" for hierarchy "FullAdder:FA_0" File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab04/ripple_carry.vhd Line: 26
 Info (286030): Timing-Driven Synthesis is running
 Warning (20013): Ignored 24 assignments for entity "DE10_Standard" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity DE10_Standard -section_id Top was ignored
@@ -339,14 +334,14 @@ Warning (20013): Ignored 24 assignments for entity "de10" -- entity does not exi
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity de10 -section_id Top was ignored
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 34 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 20 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 9 input pins
-    Info (21059): Implemented 12 output pins
-    Info (21061): Implemented 13 logic cells
+    Info (21059): Implemented 5 output pins
+    Info (21061): Implemented 6 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 51 warnings
     Info: Peak virtual memory: 4880 megabytes
-    Info: Processing ended: Sun Oct 27 10:39:26 2024
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:08
+    Info: Processing ended: Mon Oct 28 12:22:01 2024
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:16
 
 
