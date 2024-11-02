@@ -1,0 +1,32 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity DispHEX is
+    port (
+        D : in unsigned(5 downto 0);
+        HEX0 : out std_logic_vector(6 downto 0);
+        HEX1 : out std_logic_vector(6 downto 0)
+    );
+end entity DispHEX;
+
+architecture Structural of DispHEX is
+    signal lower_4_bits : std_logic_vector(3 downto 0);
+    signal upper_2_bits : std_logic_vector(3 downto 0);
+begin
+    lower_4_bits <= std_logic_vector(D(3 downto 0));
+    upper_2_bits <= std_logic_vector("00" & D(5 downto 4));
+
+    -- Instantiate the BCD modules (assuming they are named BCD)
+    BCD0: entity work.BCD
+        port map (
+            BCD_in => lower_4_bits,
+            Seg_out => HEX0
+        );
+
+    BCD1: entity work.BCD
+        port map (
+            BCD_in => upper_2_bits,
+            Seg_out => HEX1
+        );
+end architecture Structural;

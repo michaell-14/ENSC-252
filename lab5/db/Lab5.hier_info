@@ -1,0 +1,15 @@
+|incr
+clk => accumulator[0].CLK
+clk => accumulator[1].CLK
+clk => accumulator[2].CLK
+clk => accumulator[3].CLK
+clk => accumulator[4].CLK
+clk => accumulator[5].CLK
+f[0] << accumulator[0].DB_MAX_OUTPUT_PORT_TYPE
+f[1] << accumulator[1].DB_MAX_OUTPUT_PORT_TYPE
+f[2] << accumulator[2].DB_MAX_OUTPUT_PORT_TYPE
+f[3] << accumulator[3].DB_MAX_OUTPUT_PORT_TYPE
+f[4] << accumulator[4].DB_MAX_OUTPUT_PORT_TYPE
+f[5] << accumulator[5].DB_MAX_OUTPUT_PORT_TYPE
+
+

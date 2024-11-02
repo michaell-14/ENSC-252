@@ -1,0 +1,33 @@
+vsim -gui work.incr_tb
+# vsim -gui work.incr_tb 
+# Start time: 17:54:24 on Nov 01,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.incr_tb(behaviour)
+# Loading work.incr(behavioral)
+add wave sim:/incr_tb/*
+run -all
+add wave -position insertpoint  \
+sim:/incr_tb/clk_hz \
+sim:/incr_tb/clk_period \
+sim:/incr_tb/tb_clock \
+sim:/incr_tb/tb_f \
+sim:/incr_tb/tb_f(5) \
+sim:/incr_tb/tb_f(4) \
+sim:/incr_tb/tb_f(3) \
+sim:/incr_tb/tb_f(2) \
+sim:/incr_tb/tb_f(1) \
+sim:/incr_tb/tb_f(0)
+# Break key hit
+# Simulation stop requested.
+restart
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Break key hit
+# Simulation stop requested.
+# End time: 14:24:02 on Nov 02,2024, Elapsed time: 20:29:38
+# Errors: 0, Warnings: 2
