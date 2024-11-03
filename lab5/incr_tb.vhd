@@ -1,3 +1,5 @@
+--Michael Lange, 301580599; Trevor Ruttan, 301580889; Rohin Gill, 301582525;
+
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 USE ieee.numeric_std.all;

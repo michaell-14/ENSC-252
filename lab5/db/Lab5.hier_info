@@ -1,15 +1,147 @@
-|incr
-clk => accumulator[0].CLK
-clk => accumulator[1].CLK
-clk => accumulator[2].CLK
-clk => accumulator[3].CLK
-clk => accumulator[4].CLK
-clk => accumulator[5].CLK
-f[0] << accumulator[0].DB_MAX_OUTPUT_PORT_TYPE
-f[1] << accumulator[1].DB_MAX_OUTPUT_PORT_TYPE
-f[2] << accumulator[2].DB_MAX_OUTPUT_PORT_TYPE
-f[3] << accumulator[3].DB_MAX_OUTPUT_PORT_TYPE
-f[4] << accumulator[4].DB_MAX_OUTPUT_PORT_TYPE
-f[5] << accumulator[5].DB_MAX_OUTPUT_PORT_TYPE
+|top_incr
+SW[0] => Fcount:Fcount_0.D[0]
+SW[1] => Fcount:Fcount_0.D[1]
+SW[2] => Fcount:Fcount_0.D[2]
+SW[3] => Fcount:Fcount_0.D[3]
+KEY[0] => Fcount:Fcount_0.clk
+KEY[1] => Fcount:Fcount_0.reset
+HEX0[0] << DispHEX:DispHEX_0.Y0[0]
+HEX0[1] << DispHEX:DispHEX_0.Y0[1]
+HEX0[2] << DispHEX:DispHEX_0.Y0[2]
+HEX0[3] << DispHEX:DispHEX_0.Y0[3]
+HEX0[4] << DispHEX:DispHEX_0.Y0[4]
+HEX0[5] << DispHEX:DispHEX_0.Y0[5]
+HEX0[6] << DispHEX:DispHEX_0.Y0[6]
+HEX1[0] << DispHEX:DispHEX_0.Y1[0]
+HEX1[1] << DispHEX:DispHEX_0.Y1[1]
+HEX1[2] << DispHEX:DispHEX_0.Y1[2]
+HEX1[3] << DispHEX:DispHEX_0.Y1[3]
+HEX1[4] << DispHEX:DispHEX_0.Y1[4]
+HEX1[5] << DispHEX:DispHEX_0.Y1[5]
+HEX1[6] << DispHEX:DispHEX_0.Y1[6]
+
+
+|top_incr|Fcount:Fcount_0
+clk => acc[0].CLK
+clk => acc[1].CLK
+clk => acc[2].CLK
+clk => acc[3].CLK
+clk => acc[4].CLK
+clk => acc[5].CLK
+reset => acc[0].ACLR
+reset => acc[1].ACLR
+reset => acc[2].ACLR
+reset => acc[3].ACLR
+reset => acc[4].ACLR
+reset => acc[5].ACLR
+D[0] => Add0.IN6
+D[1] => Add0.IN5
+D[2] => Add0.IN4
+D[3] => Add0.IN3
+Y[0] <= acc[0].DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= acc[1].DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= acc[2].DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= acc[3].DB_MAX_OUTPUT_PORT_TYPE
+Y[4] <= acc[4].DB_MAX_OUTPUT_PORT_TYPE
+Y[5] <= acc[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_incr|DispHEX:DispHEX_0
+D[0] => segdecoder:SegDecoder0.D[0]
+D[1] => segdecoder:SegDecoder0.D[1]
+D[2] => segdecoder:SegDecoder0.D[2]
+D[3] => segdecoder:SegDecoder0.D[3]
+D[4] => segdecoder:SegDecoder1.D[0]
+D[5] => segdecoder:SegDecoder1.D[1]
+Y0[0] <= segdecoder:SegDecoder0.Y[0]
+Y0[1] <= segdecoder:SegDecoder0.Y[1]
+Y0[2] <= segdecoder:SegDecoder0.Y[2]
+Y0[3] <= segdecoder:SegDecoder0.Y[3]
+Y0[4] <= segdecoder:SegDecoder0.Y[4]
+Y0[5] <= segdecoder:SegDecoder0.Y[5]
+Y0[6] <= segdecoder:SegDecoder0.Y[6]
+Y1[0] <= segdecoder:SegDecoder1.Y[0]
+Y1[1] <= segdecoder:SegDecoder1.Y[1]
+Y1[2] <= segdecoder:SegDecoder1.Y[2]
+Y1[3] <= segdecoder:SegDecoder1.Y[3]
+Y1[4] <= segdecoder:SegDecoder1.Y[4]
+Y1[5] <= segdecoder:SegDecoder1.Y[5]
+Y1[6] <= segdecoder:SegDecoder1.Y[6]
+
+
+|top_incr|DispHEX:DispHEX_0|SegDecoder:SegDecoder0
+D[0] => Mux0.IN19
+D[0] => Mux1.IN19
+D[0] => Mux2.IN19
+D[0] => Mux3.IN19
+D[0] => Mux4.IN19
+D[0] => Mux5.IN19
+D[0] => Mux6.IN19
+D[1] => Mux0.IN18
+D[1] => Mux1.IN18
+D[1] => Mux2.IN18
+D[1] => Mux3.IN18
+D[1] => Mux4.IN18
+D[1] => Mux5.IN18
+D[1] => Mux6.IN18
+D[2] => Mux0.IN17
+D[2] => Mux1.IN17
+D[2] => Mux2.IN17
+D[2] => Mux3.IN17
+D[2] => Mux4.IN17
+D[2] => Mux5.IN17
+D[2] => Mux6.IN17
+D[3] => Mux0.IN16
+D[3] => Mux1.IN16
+D[3] => Mux2.IN16
+D[3] => Mux3.IN16
+D[3] => Mux4.IN16
+D[3] => Mux5.IN16
+D[3] => Mux6.IN16
+Y[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+Y[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+Y[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+Y[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_incr|DispHEX:DispHEX_0|SegDecoder:SegDecoder1
+D[0] => Mux0.IN19
+D[0] => Mux1.IN19
+D[0] => Mux2.IN19
+D[0] => Mux3.IN19
+D[0] => Mux4.IN19
+D[0] => Mux5.IN19
+D[0] => Mux6.IN19
+D[1] => Mux0.IN18
+D[1] => Mux1.IN18
+D[1] => Mux2.IN18
+D[1] => Mux3.IN18
+D[1] => Mux4.IN18
+D[1] => Mux5.IN18
+D[1] => Mux6.IN18
+D[2] => Mux0.IN17
+D[2] => Mux1.IN17
+D[2] => Mux2.IN17
+D[2] => Mux3.IN17
+D[2] => Mux4.IN17
+D[2] => Mux5.IN17
+D[2] => Mux6.IN17
+D[3] => Mux0.IN16
+D[3] => Mux1.IN16
+D[3] => Mux2.IN16
+D[3] => Mux3.IN16
+D[3] => Mux4.IN16
+D[3] => Mux5.IN16
+D[3] => Mux6.IN16
+Y[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+Y[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+Y[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+Y[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 

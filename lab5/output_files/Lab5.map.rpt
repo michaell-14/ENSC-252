@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab5
-Sat Nov  2 15:29:30 2024
+Sat Nov  2 22:24:45 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -14,9 +14,10 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  9. Port Connectivity Checks: "DispHEX:DispHEX_0|SegDecoder:SegDecoder1"
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -43,14 +44,14 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Nov  2 15:29:30 2024          ;
+; Analysis & Synthesis Status     ; Successful - Sat Nov  2 22:24:45 2024          ;
 ; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                   ; Lab5                                           ;
-; Top-level Entity Name           ; incr                                           ;
+; Top-level Entity Name           ; top_incr                                       ;
 ; Family                          ; Cyclone V                                      ;
 ; Logic utilization (in ALMs)     ; N/A                                            ;
 ; Total registers                 ; 6                                              ;
-; Total pins                      ; 7                                              ;
+; Total pins                      ; 20                                             ;
 ; Total virtual pins              ; 0                                              ;
 ; Total block memory bits         ; 0                                              ;
 ; Total DSP Blocks                ; 0                                              ;
@@ -69,7 +70,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSXFC6D6F31C6     ;                    ;
-; Top-level entity name                                                           ; incr               ; Lab5               ;
+; Top-level entity name                                                           ; top_incr           ; Lab5               ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -167,49 +168,56 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                           ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                    ; Library ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
-; incr.vhd                         ; yes             ; User VHDL File  ; C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/incr.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                 ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                          ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------+---------+
+; ../lab3/SegDecoder.vhd           ; yes             ; User VHDL File  ; C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/SegDecoder.vhd ;         ;
+; DispHEX.vhd                      ; yes             ; User VHDL File  ; C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/DispHEX.vhd    ;         ;
+; Fcount.vhd                       ; yes             ; User VHDL File  ; C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/Fcount.vhd     ;         ;
+; top_incr.vhd                     ; yes             ; User VHDL File  ; C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/top_incr.vhd   ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                  ;
-+---------------------------------------------+----------------+
-; Resource                                    ; Usage          ;
-+---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 1              ;
-;                                             ;                ;
-; Combinational ALUT usage for logic          ; 6              ;
-;     -- 7 input functions                    ; 0              ;
-;     -- 6 input functions                    ; 1              ;
-;     -- 5 input functions                    ; 1              ;
-;     -- 4 input functions                    ; 1              ;
-;     -- <=3 input functions                  ; 3              ;
-;                                             ;                ;
-; Dedicated logic registers                   ; 6              ;
-;                                             ;                ;
-; I/O pins                                    ; 7              ;
-;                                             ;                ;
-; Total DSP Blocks                            ; 0              ;
-;                                             ;                ;
-; Maximum fan-out node                        ; accumulator[0] ;
-; Maximum fan-out                             ; 7              ;
-; Total fan-out                               ; 46             ;
-; Average fan-out                             ; 1.77           ;
-+---------------------------------------------+----------------+
++----------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                          ;
++---------------------------------------------+------------------------+
+; Resource                                    ; Usage                  ;
++---------------------------------------------+------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 8                      ;
+;                                             ;                        ;
+; Combinational ALUT usage for logic          ; 16                     ;
+;     -- 7 input functions                    ; 0                      ;
+;     -- 6 input functions                    ; 0                      ;
+;     -- 5 input functions                    ; 0                      ;
+;     -- 4 input functions                    ; 7                      ;
+;     -- <=3 input functions                  ; 9                      ;
+;                                             ;                        ;
+; Dedicated logic registers                   ; 6                      ;
+;                                             ;                        ;
+; I/O pins                                    ; 20                     ;
+;                                             ;                        ;
+; Total DSP Blocks                            ; 0                      ;
+;                                             ;                        ;
+; Maximum fan-out node                        ; Fcount:Fcount_0|acc[0] ;
+; Maximum fan-out                             ; 8                      ;
+; Total fan-out                               ; 100                    ;
+; Average fan-out                             ; 1.61                   ;
++---------------------------------------------+------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |incr                      ; 6 (6)               ; 6 (6)                     ; 0                 ; 0          ; 7    ; 0            ; |incr               ; incr        ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                       ;
++--------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node     ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                ; Entity Name ; Library Name ;
++--------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------+-------------+--------------+
+; |top_incr                      ; 16 (0)              ; 6 (0)                     ; 0                 ; 0          ; 20   ; 0            ; |top_incr                                          ; top_incr    ; work         ;
+;    |DispHEX:DispHEX_0|         ; 10 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_incr|DispHEX:DispHEX_0                        ; DispHEX     ; work         ;
+;       |SegDecoder:SegDecoder0| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_incr|DispHEX:DispHEX_0|SegDecoder:SegDecoder0 ; SegDecoder  ; work         ;
+;       |SegDecoder:SegDecoder1| ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_incr|DispHEX:DispHEX_0|SegDecoder:SegDecoder1 ; SegDecoder  ; work         ;
+;    |Fcount:Fcount_0|           ; 6 (6)               ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |top_incr|Fcount:Fcount_0                          ; Fcount      ; work         ;
++--------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -221,11 +229,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Total registers                              ; 6     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 6     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------+
+; Port Connectivity Checks: "DispHEX:DispHEX_0|SegDecoder:SegDecoder1" ;
++---------+-------+----------+-----------------------------------------+
+; Port    ; Type  ; Severity ; Details                                 ;
++---------+-------+----------+-----------------------------------------+
+; d[3..2] ; Input ; Info     ; Stuck at GND                            ;
++---------+-------+----------+-----------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -234,19 +251,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; arriav_ff             ; 6                           ;
-;     plain             ; 6                           ;
-; arriav_lcell_comb     ; 6                           ;
-;     normal            ; 6                           ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 1                           ;
-;         4 data inputs ; 1                           ;
-;         5 data inputs ; 1                           ;
-;         6 data inputs ; 1                           ;
-; boundary_port         ; 7                           ;
+;     CLR               ; 6                           ;
+; arriav_lcell_comb     ; 19                          ;
+;     arith             ; 6                           ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 4                           ;
+;     normal            ; 13                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 3                           ;
+;         4 data inputs ; 7                           ;
+; boundary_port         ; 20                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 0.92                        ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.24                        ;
 +-----------------------+-----------------------------+
 
 
@@ -265,7 +283,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Sat Nov  2 15:29:19 2024
+    Info: Processing started: Sat Nov  2 22:24:34 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab5 -c Lab5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -273,24 +291,35 @@ Info (12021): Found 2 design units, including 1 entities, in source file /users/
     Info (12022): Found design unit 1: SegDecoder-behavorial File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/SegDecoder.vhd Line: 12
     Info (12023): Found entity 1: SegDecoder File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab3/SegDecoder.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file incr.vhd
-    Info (12022): Found design unit 1: incr-Behavioral File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/incr.vhd Line: 12
-    Info (12023): Found entity 1: incr File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/incr.vhd Line: 5
+    Info (12022): Found design unit 1: incr-Behavioral File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/incr.vhd Line: 14
+    Info (12023): Found entity 1: incr File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/incr.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file incr_tb.vhd
-    Info (12022): Found design unit 1: incr_tb-Behaviour File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/incr_tb.vhd Line: 8
-    Info (12023): Found entity 1: incr_tb File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/incr_tb.vhd Line: 5
+    Info (12022): Found design unit 1: incr_tb-Behaviour File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/incr_tb.vhd Line: 10
+    Info (12023): Found entity 1: incr_tb File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/incr_tb.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file disphex.vhd
-    Info (12022): Found design unit 1: DispHEX-Structural File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/DispHEX.vhd Line: 13
-    Info (12023): Found entity 1: DispHEX File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/DispHEX.vhd Line: 5
+    Info (12022): Found design unit 1: DispHEX-Structural File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/DispHEX.vhd Line: 15
+    Info (12023): Found entity 1: DispHEX File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/DispHEX.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file top_test.vhd
-    Info (12022): Found design unit 1: top_test-Behavioral File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/top_test.vhd Line: 13
-    Info (12023): Found entity 1: top_test File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/top_test.vhd Line: 5
+    Info (12022): Found design unit 1: top_test-Behavioral File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/top_test.vhd Line: 15
+    Info (12023): Found entity 1: top_test File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/top_test.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file fcount.vhd
-    Info (12022): Found design unit 1: Fcount-Behavioral File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/Fcount.vhd Line: 14
-    Info (12023): Found entity 1: Fcount File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/Fcount.vhd Line: 5
+    Info (12022): Found design unit 1: Fcount-Behavioral File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/Fcount.vhd Line: 16
+    Info (12023): Found entity 1: Fcount File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/Fcount.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file fcount_tb.vhd
-    Info (12022): Found design unit 1: Fcount_tb-Behavioral File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/Fcount_tb.vhd Line: 8
-    Info (12023): Found entity 1: Fcount_tb File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/Fcount_tb.vhd Line: 5
-Info (12127): Elaborating entity "incr" for the top level hierarchy
+    Info (12022): Found design unit 1: Fcount_tb-Behavioral File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/Fcount_tb.vhd Line: 10
+    Info (12023): Found entity 1: Fcount_tb File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/Fcount_tb.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file top_incr.vhd
+    Info (12022): Found design unit 1: top_incr-behavioural File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/top_incr.vhd Line: 16
+    Info (12023): Found entity 1: top_incr File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/top_incr.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file fcount_pt5_tb.vhd
+    Info (12022): Found design unit 1: fcount_pt5_tb-Behavioral File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/fcount_pt5_tb.vhd Line: 10
+    Info (12023): Found entity 1: fcount_pt5_tb File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/fcount_pt5_tb.vhd Line: 7
+Info (12127): Elaborating entity "top_incr" for the top level hierarchy
+Info (12128): Elaborating entity "Fcount" for hierarchy "Fcount:Fcount_0" File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/top_incr.vhd Line: 44
+Info (12128): Elaborating entity "DispHEX" for hierarchy "DispHEX:DispHEX_0" File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/top_incr.vhd Line: 56
+Info (12128): Elaborating entity "SegDecoder" for hierarchy "DispHEX:DispHEX_0|SegDecoder:SegDecoder0" File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/DispHEX.vhd Line: 24
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "HEX1[1]" is stuck at GND File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/top_incr.vhd Line: 12
 Info (286030): Timing-Driven Synthesis is running
 Warning (20013): Ignored 24 assignments for entity "DE10_Standard" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity DE10_Standard -section_id Top was ignored
@@ -344,14 +373,14 @@ Warning (20013): Ignored 24 assignments for entity "de10" -- entity does not exi
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity de10 -section_id Top was ignored
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 13 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 6 output pins
-    Info (21061): Implemented 6 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 51 warnings
-    Info: Peak virtual memory: 4916 megabytes
-    Info: Processing ended: Sat Nov  2 15:29:30 2024
+Info (21057): Implemented 36 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
+    Info (21059): Implemented 14 output pins
+    Info (21061): Implemented 16 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 53 warnings
+    Info: Peak virtual memory: 4899 megabytes
+    Info: Processing ended: Sat Nov  2 22:24:45 2024
     Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:16
+    Info: Total CPU time (on all processors): 00:00:15
 
 

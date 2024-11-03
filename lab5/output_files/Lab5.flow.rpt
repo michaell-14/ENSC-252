@@ -1,5 +1,5 @@
 Flow report for Lab5
-Sat Nov  2 15:30:50 2024
+Sat Nov  2 22:25:49 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -41,16 +41,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +---------------------------------+------------------------------------------------+
-; Flow Status                     ; Successful - Sat Nov  2 15:30:50 2024          ;
+; Flow Status                     ; Successful - Sat Nov  2 22:25:49 2024          ;
 ; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                   ; Lab5                                           ;
-; Top-level Entity Name           ; incr                                           ;
+; Top-level Entity Name           ; top_incr                                       ;
 ; Family                          ; Cyclone V                                      ;
 ; Device                          ; 5CSXFC6D6F31C6                                 ;
 ; Timing Models                   ; Final                                          ;
-; Logic utilization (in ALMs)     ; 4 / 41,910 ( < 1 % )                           ;
-; Total registers                 ; 8                                              ;
-; Total pins                      ; 7 / 499 ( 1 % )                                ;
+; Logic utilization (in ALMs)     ; 9 / 41,910 ( < 1 % )                           ;
+; Total registers                 ; 6                                              ;
+; Total pins                      ; 20 / 499 ( 4 % )                               ;
 ; Total virtual pins              ; 0                                              ;
 ; Total block memory bits         ; 0 / 5,662,720 ( 0 % )                          ;
 ; Total DSP Blocks                ; 0 / 112 ( 0 % )                                ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/02/2024 15:29:20 ;
+; Start date & time ; 11/02/2024 22:24:35 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Lab5                ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+---------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name   ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+---------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 24271721295661.173058656016544         ; --            ; --            ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 24271721295661.173061147507104         ; --            ; --            ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --            ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --            ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --            ; eda_board_design_signal_integrity ;
@@ -91,17 +91,17 @@ https://fpgasoftware.intel.com/eula.
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --            ; --                                ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; DE10_Standard ; Top                               ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; de10          ; Top                               ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; incr          ; Top                               ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; top_incr      ; Top                               ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; DE10_Standard ; Top                               ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; de10          ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; incr          ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; top_incr      ; Top                               ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; DE10_Standard ; Top                               ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; de10          ; Top                               ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; incr          ; Top                               ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; top_incr      ; Top                               ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --            ; --                                ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --            ; --                                ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --            ; --                                ;
-; TOP_LEVEL_ENTITY                    ; incr                                   ; Lab5          ; --            ; --                                ;
+; TOP_LEVEL_ENTITY                    ; top_incr                               ; Lab5          ; --            ; --                                ;
 +-------------------------------------+----------------------------------------+---------------+---------------+-----------------------------------+
 
 
@@ -110,12 +110,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4916 MB             ; 00:00:16                           ;
-; Fitter               ; 00:01:05     ; 1.0                     ; 7882 MB             ; 00:02:38                           ;
-; Assembler            ; 00:00:06     ; 1.0                     ; 4865 MB             ; 00:00:04                           ;
-; Timing Analyzer      ; 00:00:04     ; 1.1                     ; 5275 MB             ; 00:00:04                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4723 MB             ; 00:00:01                           ;
-; Total                ; 00:01:27     ; --                      ; --                  ; 00:03:03                           ;
+; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4899 MB             ; 00:00:15                           ;
+; Fitter               ; 00:00:49     ; 1.0                     ; 7924 MB             ; 00:02:02                           ;
+; Assembler            ; 00:00:05     ; 1.0                     ; 4873 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:05     ; 1.1                     ; 5254 MB             ; 00:00:03                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4732 MB             ; 00:00:01                           ;
+; Total                ; 00:01:11     ; --                      ; --                  ; 00:02:24                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
