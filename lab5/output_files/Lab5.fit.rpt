@@ -1,5 +1,5 @@
 Fitter report for Lab5
-Sat Nov  2 22:25:35 2024
+Mon Nov  4 12:17:52 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -62,7 +62,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +---------------------------------+------------------------------------------------+
-; Fitter Status                   ; Successful - Sat Nov  2 22:25:35 2024          ;
+; Fitter Status                   ; Successful - Mon Nov  4 12:17:52 2024          ;
 ; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                   ; Lab5                                           ;
 ; Top-level Entity Name           ; top_incr                                       ;
@@ -2045,10 +2045,10 @@ Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:02
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/output_files/Lab5.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 156 warnings
-    Info: Peak virtual memory: 7924 megabytes
-    Info: Processing ended: Sat Nov  2 22:25:35 2024
+    Info: Peak virtual memory: 7912 megabytes
+    Info: Processing ended: Mon Nov  4 12:17:53 2024
     Info: Elapsed time: 00:00:49
-    Info: Total CPU time (on all processors): 00:02:02
+    Info: Total CPU time (on all processors): 00:02:03
 
 
 +----------------------------+

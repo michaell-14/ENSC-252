@@ -1,0 +1,33 @@
+# Compile of Fcount.vhd was successful.
+# Compile of Fcount_tb.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.fcount_tb
+# vsim -gui work.fcount_tb 
+# Start time: 11:48:41 on Nov 04,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.fcount_tb(behavioral)
+# Loading work.fcount(behavioral)
+# ** Fatal: (vsim-3817) Port "reset" of entity "fcount" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /fcount_tb/UUT File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/simulation/Fcount.vhd Line: 10
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 11:48:42 on Nov 04,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 5
+# Compile of Fcount.vhd was successful.
+# Compile of Fcount_tb.vhd was successful.
+# Compile of fcount_pt5_tb.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.fcount_pt5_tb
+# vsim -gui work.fcount_pt5_tb 
+# Start time: 11:54:08 on Nov 04,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.fcount_pt5_tb(behavioral)
+# Loading work.fcount(behavioral)
+# End time: 11:54:20 on Nov 04,2024, Elapsed time: 0:00:12
+# Errors: 0, Warnings: 3

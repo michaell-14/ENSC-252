@@ -18,7 +18,7 @@ architecture Behavioral of Fcount is
 begin
     process (clk, reset)
     begin
-        if reset = '1' then
+        if reset = '0' then --'1' was not allowing anything, what if change to '0'?; lol this fixed it
             acc <= (others => '0');  -- Asynchronous reset
         elsif rising_edge(clk) then
             acc <= acc + unsigned(D);

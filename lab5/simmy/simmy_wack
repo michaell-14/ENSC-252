@@ -1,4 +1,0 @@
-clk_hz = 50000000
-clk_period = 20000 ps
-tb_clock = 1
-tb_f = 000000

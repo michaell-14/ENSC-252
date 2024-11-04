@@ -45,8 +45,8 @@ begin
     stim_proc: process
     begin
         -- Test reset functionality
-        reset <= '1'; wait for 20 ns;
         reset <= '0'; wait for 20 ns;
+        reset <= '1'; wait for 20 ns;
 
         -- Test increment with various values
         D <= "0001"; wait for 20 ns;

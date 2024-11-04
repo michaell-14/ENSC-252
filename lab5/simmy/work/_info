@@ -9,26 +9,26 @@ z2
 !i10f 100
 cModel Technology
 dC:/intelFPGA/20.1
-Efcount
-Z0 w1730607822
+Eincr
+Z0 w1730607817
 Z1 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 13
+!i122 0
 Z4 dC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/simmy
-Z5 8C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/simmy/Fcount.vhd
-Z6 FC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/simmy/Fcount.vhd
+Z5 8C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/simmy/incr.vhd
+Z6 FC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/simmy/incr.vhd
 l0
 L7 1
-VX:n>^alSolbe73[Q=kIK70
-!s100 WH>Q05FIWVhmcQ[dK;i`Z2
+V]5C^C5cBWQHdLW_DeZj6`0
+!s100 2@YmgnY4dXJWB5bM9nRJY2
 Z7 OV;C;2020.1;71
 32
-Z8 !s110 1730609584
+Z8 !s110 1730748866
 !i10b 1
-Z9 !s108 1730609584.000000
-Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/simmy/Fcount.vhd|
-Z11 !s107 C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/simmy/Fcount.vhd|
+Z9 !s108 1730748866.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/simmy/incr.vhd|
+Z11 !s107 C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/simmy/incr.vhd|
 !i113 1
 Z12 o-work work -2002 -explicit
 Z13 tExplicit 1 CvgOpt 0
@@ -36,12 +36,12 @@ Abehavioral
 R1
 R2
 R3
-DEx4 work 6 fcount 0 22 X:n>^alSolbe73[Q=kIK70
-!i122 13
-l17
-L15 12
-VO8PJ8PE4=29S4>4ji9IW<2
-!s100 eIoabjo@gMVDIEkmUT9493
+DEx4 work 4 incr 0 22 ]5C^C5cBWQHdLW_DeZj6`0
+!i122 0
+l16
+L14 12
+V;?Cd6X9i4=7cUIcK]OW`m1
+!s100 ;56JKaH11M@31K6nC01jD2
 R7
 32
 R8
@@ -52,112 +52,26 @@ R11
 !i113 1
 R12
 R13
-Efcount_tb
-Z14 w1730608768
-R1
-R2
-R3
-!i122 14
-R4
-Z15 8C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/simmy/fcount_pt5_tb.vhd
-Z16 FC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/simmy/fcount_pt5_tb.vhd
-l0
-L7 1
-V>0YKz;C2mldG18S;W;BY93
-!s100 ZIFc3ZdDiSF9Um@PTIF9n0
-R7
-32
-Z17 !s110 1730609585
-!i10b 1
-R9
-Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/simmy/fcount_pt5_tb.vhd|
-!s107 C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/simmy/fcount_pt5_tb.vhd|
-!i113 1
-R12
-R13
-Abehavioral
-R1
-R2
-R3
-DEx4 work 9 fcount_tb 0 22 >0YKz;C2mldG18S;W;BY93
-!i122 14
-l26
-L10 54
-VZ]6jh9o]j95Zzk19fYYAo1
-!s100 I6f4bl]ZZK_=J:4SZ][bd2
-R7
-32
-R17
-!i10b 1
-R9
-R18
-Z19 !s107 C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/simmy/fcount_pt5_tb.vhd|
-!i113 1
-R12
-R13
-Eincr
-Z20 w1730507593
-R1
-R2
-R3
-!i122 0
-R4
-Z21 8C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/simmy/incr.vhd
-Z22 FC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/simmy/incr.vhd
-l0
-L5 1
-VkL@VS=A5CE3?7cm1DCXI=1
-!s100 nTXObljWB74g4lj`T6ZjM3
-R7
-32
-Z23 !s110 1730507804
-!i10b 1
-Z24 !s108 1730507804.000000
-Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/simmy/incr.vhd|
-Z26 !s107 C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/simmy/incr.vhd|
-!i113 1
-R12
-R13
-Abehavioral
-R1
-R2
-R3
-DEx4 work 4 incr 0 22 kL@VS=A5CE3?7cm1DCXI=1
-!i122 0
-l14
-L12 12
-V`zb]nG1EEW6HnE5EbO`kT1
-!s100 ijjTSneg<oR@8TYGOCRdS2
-R7
-32
-R23
-!i10b 1
-R24
-R25
-R26
-!i113 1
-R12
-R13
 Eincr_tb
-Z27 w1730507594
+Z14 w1730607818
 R1
 R2
 R3
 !i122 1
 R4
-Z28 8C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/simmy/incr_tb.vhd
-Z29 FC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/simmy/incr_tb.vhd
+Z15 8C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/simmy/incr_tb.vhd
+Z16 FC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/simmy/incr_tb.vhd
 l0
-L5 1
-V;lU=[z7I1PM@kSDmGElI:2
-!s100 [ai0[BmRfNB?18lMCkk=o1
+L7 1
+V@YoR3<?@KPfQSkW5<jzTE0
+!s100 o_m7`PU@?d?^[Yl2a<68N0
 R7
 32
-R23
+R8
 !i10b 1
-R24
-Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/simmy/incr_tb.vhd|
-Z31 !s107 C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/simmy/incr_tb.vhd|
+R9
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/simmy/incr_tb.vhd|
+!s107 C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/simmy/incr_tb.vhd|
 !i113 1
 R12
 R13
@@ -165,19 +79,19 @@ Abehaviour
 R1
 R2
 R3
-DEx4 work 7 incr_tb 0 22 ;lU=[z7I1PM@kSDmGElI:2
+DEx4 work 7 incr_tb 0 22 @YoR3<?@KPfQSkW5<jzTE0
 !i122 1
-l24
-L8 28
-VKalEEl<ECGJT=Rk@Z1X`K0
-!s100 EG:lVoY;=YmK5HJV2A:a^3
+l26
+L10 28
+V26oQnX?D9m?MJHoFl`]=92
+!s100 FUVdakFFN>ZGOGACaF3Qd1
 R7
 32
-R23
+R8
 !i10b 1
-R24
-R30
-R31
+R9
+R17
+Z18 !s107 C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/simmy/incr_tb.vhd|
 !i113 1
 R12
 R13
