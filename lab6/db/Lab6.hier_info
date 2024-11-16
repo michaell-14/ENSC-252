@@ -1,0 +1,39 @@
+|Count4
+clk => incr_port5:U1.clk
+load => incr_port5:U1.load
+enable => incr_port5:U1.enable
+D[0] => incr_port5:U1.D[0]
+D[1] => incr_port5:U1.D[1]
+D[2] => incr_port5:U1.D[2]
+D[3] => incr_port5:U1.D[3]
+Q[0] << incr_port5:U1.Q[0]
+Q[1] << incr_port5:U1.Q[1]
+Q[2] << incr_port5:U1.Q[2]
+Q[3] << incr_port5:U1.Q[3]
+
+
+|Count4|incr_port5:U1
+clk => accumulator[0].CLK
+clk => accumulator[1].CLK
+clk => accumulator[2].CLK
+clk => accumulator[3].CLK
+load => next_value.OUTPUTSELECT
+load => next_value.OUTPUTSELECT
+load => next_value.OUTPUTSELECT
+load => next_value.OUTPUTSELECT
+enable => carry.IN1
+enable => next_value.IN1
+enable => next_value.OUTPUTSELECT
+enable => next_value.OUTPUTSELECT
+enable => next_value.OUTPUTSELECT
+enable => next_value.OUTPUTSELECT
+D[0] => next_value.DATAB
+D[1] => next_value.DATAB
+D[2] => next_value.DATAB
+D[3] => next_value.DATAB
+Q[0] <= accumulator[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= accumulator[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= accumulator[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= accumulator[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
