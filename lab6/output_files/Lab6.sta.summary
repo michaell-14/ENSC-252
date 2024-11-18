@@ -2,100 +2,84 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
-Slack : -5.418
-TNS   : -92.935
-
-Type  : Slow 1100mV 85C Model Setup 'PreScale:clk_pre|counter[19]'
-Slack : -2.269
-TNS   : -14.075
-
-Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
-Slack : 0.373
+Type  : Slow 1100mV 85C Model Setup 'altera_reserved_tck'
+Slack : 10.086
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Hold 'PreScale:clk_pre|counter[19]'
-Slack : 0.698
+Type  : Slow 1100mV 85C Model Hold 'altera_reserved_tck'
+Slack : 0.152
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
-Slack : -0.504
-TNS   : -10.750
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'PreScale:clk_pre|counter[19]'
-Slack : -0.394
-TNS   : -4.608
-
-Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
-Slack : -5.468
-TNS   : -90.128
-
-Type  : Slow 1100mV 0C Model Setup 'PreScale:clk_pre|counter[19]'
-Slack : -2.272
-TNS   : -14.039
-
-Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
-Slack : 0.320
+Type  : Slow 1100mV 85C Model Recovery 'altera_reserved_tck'
+Slack : 30.323
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Hold 'PreScale:clk_pre|counter[19]'
-Slack : 0.668
+Type  : Slow 1100mV 85C Model Removal 'altera_reserved_tck'
+Slack : 0.937
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
-Slack : -0.502
-TNS   : -11.510
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'PreScale:clk_pre|counter[19]'
-Slack : -0.394
-TNS   : -4.622
-
-Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
-Slack : -3.266
-TNS   : -52.297
-
-Type  : Fast 1100mV 85C Model Setup 'PreScale:clk_pre|counter[19]'
-Slack : -1.044
-TNS   : -6.229
-
-Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
-Slack : 0.200
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 15.497
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Hold 'PreScale:clk_pre|counter[19]'
-Slack : 0.369
+Type  : Slow 1100mV 0C Model Setup 'altera_reserved_tck'
+Slack : 10.158
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
-Slack : -0.519
-TNS   : -2.367
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'PreScale:clk_pre|counter[19]'
-Slack : 0.144
+Type  : Slow 1100mV 0C Model Hold 'altera_reserved_tck'
+Slack : 0.138
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
-Slack : -2.813
-TNS   : -45.213
-
-Type  : Fast 1100mV 0C Model Setup 'PreScale:clk_pre|counter[19]'
-Slack : -0.934
-TNS   : -5.444
-
-Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
-Slack : 0.114
+Type  : Slow 1100mV 0C Model Recovery 'altera_reserved_tck'
+Slack : 30.460
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Hold 'PreScale:clk_pre|counter[19]'
-Slack : 0.328
+Type  : Slow 1100mV 0C Model Removal 'altera_reserved_tck'
+Slack : 0.850
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
-Slack : -0.493
-TNS   : -2.288
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 15.508
+TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'PreScale:clk_pre|counter[19]'
-Slack : 0.142
+Type  : Fast 1100mV 85C Model Setup 'altera_reserved_tck'
+Slack : 12.954
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'altera_reserved_tck'
+Slack : 0.039
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'altera_reserved_tck'
+Slack : 31.213
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'altera_reserved_tck'
+Slack : 0.447
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 15.235
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'altera_reserved_tck'
+Slack : 13.311
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'altera_reserved_tck'
+Slack : 0.026
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'altera_reserved_tck'
+Slack : 31.431
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'altera_reserved_tck'
+Slack : 0.384
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 15.236
 TNS   : 0.000
 
 ------------------------------------------------------------

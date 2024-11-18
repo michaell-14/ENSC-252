@@ -1,16 +1,16 @@
-Fitter Status : Successful - Sun Nov 17 19:51:50 2024
+Fitter Status : Successful - Mon Nov 18 13:45:51 2024
 Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 Revision Name : Lab6
 Top-level Entity Name : TestReaction
 Family : Cyclone V
 Device : 5CSXFC6D6F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 29 / 41,910 ( < 1 % )
-Total registers : 29
+Logic utilization (in ALMs) : 288 / 41,910 ( < 1 % )
+Total registers : 607
 Total pins : 18 / 499 ( 4 % )
 Total virtual pins : 0
-Total block memory bits : 0 / 5,662,720 ( 0 % )
-Total RAM Blocks : 0 / 553 ( 0 % )
+Total block memory bits : 768 / 5,662,720 ( < 1 % )
+Total RAM Blocks : 1 / 553 ( < 1 % )
 Total DSP Blocks : 0 / 112 ( 0 % )
 Total HSSI RX PCSs : 0 / 9 ( 0 % )
 Total HSSI PMA RX Deserializers : 0 / 9 ( 0 % )

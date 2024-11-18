@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Sun Nov 17 19:50:57 2024
+Analysis & Synthesis Status : Successful - Mon Nov 18 13:41:42 2024
 Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 Revision Name : Lab6
 Top-level Entity Name : TestReaction
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 29
+Total registers : 574
 Total pins : 18
 Total virtual pins : 0
-Total block memory bits : 0
+Total block memory bits : 768
 Total DSP Blocks : 0
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0
