@@ -1,0 +1,24 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity TestReaction is
+	port(
+			SW : in std_logic_vector(7 downto 0);
+			BUT : in std_logic_vector(1 downto 0);
+			LEDR : out std_logic_vector(7 downto 0)
+		);
+end TestReaction;
+
+architecture test_react of TestReaction is 
+
+component BCDCount2
+	port(
+        clear : in std_logic;
+        en1 : in std_logic;
+        clk1 : in std_logic;
+        Din : in std_logic_vector(3 downto 0);
+        BCD_0 : out std_logic_vector(3 downto 0);
+        BCD_1 : out std_logic_vector(3 downto 0)
+    );
+end component;
+

@@ -1,0 +1,222 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab5/simmy
+Ebcdcount2
+Z0 w1731882475
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+Z3 dC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/simulation
+Z4 8C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/simulation/BCDCount2.vhd
+Z5 FC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/simulation/BCDCount2.vhd
+l0
+L8 1
+Vc_e4?BmXW_cAa0nO4Rfj[2
+!s100 `c]3:dRDz9VD9dHQAjA_e1
+Z6 OV;C;2020.1;71
+32
+Z7 !s110 1731899963
+!i10b 1
+Z8 !s108 1731899962.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/simulation/BCDCount2.vhd|
+Z10 !s107 C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/simulation/BCDCount2.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Abehavioral_bcd
+R1
+R2
+DEx4 work 9 bcdcount2 0 22 c_e4?BmXW_cAa0nO4Rfj[2
+!i122 0
+l37
+L19 49
+VejEUNa;>@WL;TGPZIc;N^1
+!s100 M_lGZ;9n3BLoK^m^c9Rz@0
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ecount4
+Z13 w1731836075
+Z14 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z15 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R1
+R2
+!i122 1
+R3
+Z16 8C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/simulation/Count4.vhd
+Z17 FC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/simulation/Count4.vhd
+l0
+L5 1
+V?C>>28S1BV@<1fLo]:7PG3
+!s100 V17IV:8];WdPnkoF5BLHH2
+R6
+32
+R7
+!i10b 1
+Z18 !s108 1731899963.000000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/simulation/Count4.vhd|
+Z20 !s107 C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/simulation/Count4.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R14
+R15
+R1
+R2
+DEx4 work 6 count4 0 22 ?C>>28S1BV@<1fLo]:7PG3
+!i122 1
+l22
+L15 33
+VaEV^CO?bc5Com=bZK88JT2
+!s100 TI`_Zzi7KL]:g6ddXa8Pk3
+R6
+32
+R7
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R11
+R12
+Eprescale
+Z21 w1731882151
+Z22 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R1
+R2
+!i122 2
+R3
+Z23 8C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/simulation/PreScale.vhd
+Z24 FC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/simulation/PreScale.vhd
+l0
+L7 1
+VXah0O6omd96062BH?UAif0
+!s100 fb=PX[8V>PfoWdfZiFKF`0
+R6
+32
+R7
+!i10b 1
+R18
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/simulation/PreScale.vhd|
+Z26 !s107 C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/simulation/PreScale.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R22
+R1
+R2
+DEx4 work 8 prescale 0 22 Xah0O6omd96062BH?UAif0
+!i122 2
+l16
+L14 16
+VXBV4j0Nk=[B6@]?@doPeC2
+!s100 FZm09]JECHC==eJBiaQ?82
+R6
+32
+R7
+!i10b 1
+R18
+R25
+R26
+!i113 1
+R11
+R12
+Esegdecoder_lab
+Z27 w1731874249
+R1
+R2
+!i122 3
+R3
+Z28 8C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/simulation/SegDecoder_lab.vhd
+Z29 FC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/simulation/SegDecoder_lab.vhd
+l0
+L6 1
+V]35^>AL_N36MCJ2?;:1C82
+!s100 h?3=VE14TQNcDk7ja`_YZ0
+R6
+32
+R7
+!i10b 1
+R18
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/simulation/SegDecoder_lab.vhd|
+Z31 !s107 C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/simulation/SegDecoder_lab.vhd|
+!i113 1
+R11
+R12
+Abehavorial
+R1
+R2
+DEx4 work 14 segdecoder_lab 0 22 ]35^>AL_N36MCJ2?;:1C82
+!i122 3
+l13
+L12 21
+V<lfJ_XHMV>m[2[=^[2]f63
+!s100 I?emRoXg@8nGEaNRBS8aK2
+R6
+32
+R7
+!i10b 1
+R18
+R30
+R31
+!i113 1
+R11
+R12
+Etestreaction
+Z32 w1731894227
+R1
+R2
+!i122 4
+R3
+Z33 8C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/simulation/TestReaction.vhd
+Z34 FC:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/simulation/TestReaction.vhd
+l0
+L4 1
+V<1A];hVH:zHgVX[11LFV41
+!s100 =N54lfjk8ah`g0`ai<PFD2
+R6
+32
+R7
+!i10b 1
+R18
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/simulation/TestReaction.vhd|
+!s107 C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/simulation/TestReaction.vhd|
+!i113 1
+R11
+R12
+Atest_react
+R1
+R2
+DEx4 work 12 testreaction 0 22 <1A];hVH:zHgVX[11LFV41
+!i122 4
+l50
+L15 108
+VU@Yo0_^JFmS]_2ea_4`Bh2
+!s100 T>]8OL^5V0889_kN97dhl3
+R6
+32
+R7
+!i10b 1
+R18
+R35
+Z36 !s107 C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/simulation/TestReaction.vhd|
+!i113 1
+R11
+R12

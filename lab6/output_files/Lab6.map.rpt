@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab6
-Thu Nov 14 23:59:02 2024
+Sun Nov 17 19:50:57 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -14,7 +14,7 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+  9. Port Connectivity Checks: "BCDCount2:BCDC"
  10. Post-Synthesis Netlist Statistics for Top Partition
  11. Elapsed Time Per Partition
  12. Analysis & Synthesis Messages
@@ -44,14 +44,14 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Nov 14 23:59:02 2024          ;
+; Analysis & Synthesis Status     ; Successful - Sun Nov 17 19:50:57 2024          ;
 ; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                   ; Lab6                                           ;
-; Top-level Entity Name           ; Count4                                         ;
+; Top-level Entity Name           ; TestReaction                                   ;
 ; Family                          ; Cyclone V                                      ;
 ; Logic utilization (in ALMs)     ; N/A                                            ;
-; Total registers                 ; 4                                              ;
-; Total pins                      ; 11                                             ;
+; Total registers                 ; 29                                             ;
+; Total pins                      ; 18                                             ;
 ; Total virtual pins              ; 0                                              ;
 ; Total block memory bits         ; 0                                              ;
 ; Total DSP Blocks                ; 0                                              ;
@@ -70,7 +70,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSXFC6D6F31C6     ;                    ;
-; Top-level entity name                                                           ; Count4             ; Lab6               ;
+; Top-level entity name                                                           ; TestReaction       ; Lab6               ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -168,51 +168,59 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                 ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                          ; Library ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------+---------+
-; Count4.vhd                       ; yes             ; User VHDL File  ; C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/Count4.vhd     ;         ;
-; incr_port5.vhd                   ; yes             ; User VHDL File  ; C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/incr_port5.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                     ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                              ; Library ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------+---------+
+; PreScale.vhd                     ; yes             ; User VHDL File  ; C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/PreScale.vhd       ;         ;
+; Count4.vhd                       ; yes             ; User VHDL File  ; C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/Count4.vhd         ;         ;
+; BCDCount2.vhd                    ; yes             ; User VHDL File  ; C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/BCDCount2.vhd      ;         ;
+; TestReaction.vhd                 ; yes             ; User VHDL File  ; C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/TestReaction.vhd   ;         ;
+; SegDecoder_lab.vhd               ; yes             ; User VHDL File  ; C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/SegDecoder_lab.vhd ;         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------+---------+
 
 
-+----------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                ;
-+---------------------------------------------+------------------------------+
-; Resource                                    ; Usage                        ;
-+---------------------------------------------+------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 4                            ;
-;                                             ;                              ;
-; Combinational ALUT usage for logic          ; 5                            ;
-;     -- 7 input functions                    ; 1                            ;
-;     -- 6 input functions                    ; 1                            ;
-;     -- 5 input functions                    ; 1                            ;
-;     -- 4 input functions                    ; 1                            ;
-;     -- <=3 input functions                  ; 1                            ;
-;                                             ;                              ;
-; Dedicated logic registers                   ; 4                            ;
-;                                             ;                              ;
-; I/O pins                                    ; 11                           ;
-;                                             ;                              ;
-; Total DSP Blocks                            ; 0                            ;
-;                                             ;                              ;
-; Maximum fan-out node                        ; incr_port5:U1|accumulator[0] ;
-; Maximum fan-out                             ; 5                            ;
-; Total fan-out                               ; 51                           ;
-; Average fan-out                             ; 1.65                         ;
-+---------------------------------------------+------------------------------+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimate of Logic utilization (ALMs needed) ; 29          ;
+;                                             ;             ;
+; Combinational ALUT usage for logic          ; 48          ;
+;     -- 7 input functions                    ; 0           ;
+;     -- 6 input functions                    ; 10          ;
+;     -- 5 input functions                    ; 16          ;
+;     -- 4 input functions                    ; 0           ;
+;     -- <=3 input functions                  ; 22          ;
+;                                             ;             ;
+; Dedicated logic registers                   ; 29          ;
+;                                             ;             ;
+; I/O pins                                    ; 18          ;
+;                                             ;             ;
+; Total DSP Blocks                            ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; SW[0]~input ;
+; Maximum fan-out                             ; 23          ;
+; Total fan-out                               ; 293         ;
+; Average fan-out                             ; 2.59        ;
++---------------------------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                      ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name   ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------+-------------+--------------+
-; |Count4                    ; 5 (0)               ; 4 (0)                     ; 0                 ; 0          ; 11   ; 0            ; |Count4               ; Count4      ; work         ;
-;    |incr_port5:U1|         ; 5 (5)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Count4|incr_port5:U1 ; incr_port5  ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------+-------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                  ;
++------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+----------------+--------------+
+; Compilation Hierarchy Node   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                          ; Entity Name    ; Library Name ;
++------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+----------------+--------------+
+; |TestReaction                ; 48 (1)              ; 29 (1)                    ; 0                 ; 0          ; 18   ; 0            ; |TestReaction                                ; TestReaction   ; work         ;
+;    |BCDCount2:BCDC|          ; 9 (1)               ; 8 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TestReaction|BCDCount2:BCDC                 ; BCDCount2      ; work         ;
+;       |Count4:Count4_1|      ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |TestReaction|BCDCount2:BCDC|Count4:Count4_1 ; Count4         ; work         ;
+;       |Count4:Count4_2|      ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |TestReaction|BCDCount2:BCDC|Count4:Count4_2 ; Count4         ; work         ;
+;    |PreScale:clk_pre|        ; 24 (24)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |TestReaction|PreScale:clk_pre               ; PreScale       ; work         ;
+;    |SegDecoder_lab:HEX_DEC0| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TestReaction|SegDecoder_lab:HEX_DEC0        ; SegDecoder_lab ; work         ;
+;    |SegDecoder_lab:HEX_DEC1| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TestReaction|SegDecoder_lab:HEX_DEC1        ; SegDecoder_lab ; work         ;
++------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -221,23 +229,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 4     ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Total registers                              ; 29    ;
+; Number of registers using Synchronous Clear  ; 20    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 4     ;
+; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                     ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Count4|incr_port5:U1|accumulator[0] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
++--------------------------------------------+
+; Port Connectivity Checks: "BCDCount2:BCDC" ;
++------+-------+----------+------------------+
+; Port ; Type  ; Severity ; Details          ;
++------+-------+----------+------------------+
+; din  ; Input ; Info     ; Stuck at GND     ;
++------+-------+----------+------------------+
 
 
 +-----------------------------------------------------+
@@ -245,20 +253,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 4                           ;
-;     ENA               ; 4                           ;
-; arriav_lcell_comb     ; 5                           ;
-;     extend            ; 1                           ;
-;         7 data inputs ; 1                           ;
-;     normal            ; 4                           ;
-;         2 data inputs ; 1                           ;
-;         4 data inputs ; 1                           ;
-;         5 data inputs ; 1                           ;
-;         6 data inputs ; 1                           ;
-; boundary_port         ; 11                          ;
+; arriav_ff             ; 29                          ;
+;     SCLR              ; 20                          ;
+;     plain             ; 9                           ;
+; arriav_lcell_comb     ; 48                          ;
+;     arith             ; 20                          ;
+;         1 data inputs ; 20                          ;
+;     normal            ; 28                          ;
+;         2 data inputs ; 2                           ;
+;         5 data inputs ; 16                          ;
+;         6 data inputs ; 10                          ;
+; boundary_port         ; 18                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 0.94                        ;
+; Max LUT depth         ; 2.90                        ;
+; Average LUT depth     ; 1.88                        ;
 +-----------------------+-----------------------------+
 
 
@@ -277,35 +285,91 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Thu Nov 14 23:58:56 2024
+    Info: Processing started: Sun Nov 17 19:50:46 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab6 -c Lab6
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file prescale.vhd
-    Info (12022): Found design unit 1: PreScale-behavioral File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/PreScale.vhd Line: 16
-    Info (12023): Found entity 1: PreScale File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/PreScale.vhd Line: 9
+    Info (12022): Found design unit 1: PreScale-behavioral File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/PreScale.vhd Line: 14
+    Info (12023): Found entity 1: PreScale File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/PreScale.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file count4.vhd
-    Info (12022): Found design unit 1: Count4-structure File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/Count4.vhd Line: 16
-    Info (12023): Found entity 1: Count4 File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/Count4.vhd Line: 6
-Info (12021): Found 2 design units, including 1 entities, in source file incr_port5.vhd
-    Info (12022): Found design unit 1: incr_port5-Behavioral File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/incr_port5.vhd Line: 17
-    Info (12023): Found entity 1: incr_port5 File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/incr_port5.vhd Line: 7
+    Info (12022): Found design unit 1: Count4-Behavioral File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/Count4.vhd Line: 15
+    Info (12023): Found entity 1: Count4 File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/Count4.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file bcdcount2.vhd
-    Info (12022): Found design unit 1: BCDCount2-behavorial File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/BCDCount2.vhd Line: 20
-    Info (12023): Found entity 1: BCDCount2 File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/BCDCount2.vhd Line: 9
-Info (12127): Elaborating entity "Count4" for the top level hierarchy
-Info (12128): Elaborating entity "incr_port5" for hierarchy "incr_port5:U1" File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/Count4.vhd Line: 33
+    Info (12022): Found design unit 1: BCDCount2-behavioral_BCD File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/BCDCount2.vhd Line: 19
+    Info (12023): Found entity 1: BCDCount2 File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/BCDCount2.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file testreaction.vhd
+    Info (12022): Found design unit 1: TestReaction-test_react File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/TestReaction.vhd Line: 14
+    Info (12023): Found entity 1: TestReaction File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/TestReaction.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file segdecoder_lab.vhd
+    Info (12022): Found design unit 1: SegDecoder_lab-behavorial File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/SegDecoder_lab.vhd Line: 12
+    Info (12023): Found entity 1: SegDecoder_lab File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/SegDecoder_lab.vhd Line: 6
+Info (12127): Elaborating entity "TestReaction" for the top level hierarchy
+Info (12128): Elaborating entity "PreScale" for hierarchy "PreScale:clk_pre" File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/TestReaction.vhd Line: 53
+Info (12128): Elaborating entity "BCDCount2" for hierarchy "BCDCount2:BCDC" File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/TestReaction.vhd Line: 60
+Info (12128): Elaborating entity "Count4" for hierarchy "BCDCount2:BCDC|Count4:Count4_1" File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/BCDCount2.vhd Line: 39
+Info (12128): Elaborating entity "SegDecoder_lab" for hierarchy "SegDecoder_lab:HEX_DEC0" File: C:/Users/micha/OneDrive/Documents/GitHub/ENSC-252/lab6/TestReaction.vhd Line: 71
 Info (286030): Timing-Driven Synthesis is running
+Warning (20013): Ignored 24 assignments for entity "DE10_Standard" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity DE10_Standard -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity DE10_Standard -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -entity DE10_Standard -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_PRESERVE_HIGH_SPEED_TILES ON -entity DE10_Standard -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IGNORE_SOURCE_FILE_CHANGES OFF -entity DE10_Standard -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ALWAYS_USE_QXP_NETLIST OFF -entity DE10_Standard -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_COLOR 16764057 -entity DE10_Standard -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_ASSIGNMENTS ON -entity DE10_Standard -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_ASSIGNMENTS REPLACE_CONFLICTING -entity DE10_Standard -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS UPDATE_CONFLICTING -entity DE10_Standard -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PIN_ASSIGNMENTS ON -entity DE10_Standard -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PROMOTE_ASSIGNMENTS ON -entity DE10_Standard -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_TYPE STANDARD_PARTITION -entity DE10_Standard -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name ALLOW_MULTIPLE_PERSONAS OFF -entity DE10_Standard -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ASD_REGION_ID 1 -entity DE10_Standard -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name CROSS_BOUNDARY_OPTIMIZATIONS OFF -entity DE10_Standard -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_CONSTANTS_ON_INPUTS ON -entity DE10_Standard -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_INVERSIONS_ON_INPUTS ON -entity DE10_Standard -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS ON -entity DE10_Standard -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_INPUTS ON -entity DE10_Standard -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_BIDIRS ON -entity DE10_Standard -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS ON -entity DE10_Standard -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_EXTRACT_HARD_BLOCK_NODES ON -entity DE10_Standard -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity DE10_Standard -section_id Top was ignored
+Warning (20013): Ignored 24 assignments for entity "de10" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity de10 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity de10 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -entity de10 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_PRESERVE_HIGH_SPEED_TILES ON -entity de10 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IGNORE_SOURCE_FILE_CHANGES OFF -entity de10 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ALWAYS_USE_QXP_NETLIST OFF -entity de10 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_COLOR 16764057 -entity de10 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_ASSIGNMENTS ON -entity de10 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_ASSIGNMENTS REPLACE_CONFLICTING -entity de10 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS UPDATE_CONFLICTING -entity de10 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PIN_ASSIGNMENTS ON -entity de10 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PROMOTE_ASSIGNMENTS ON -entity de10 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_TYPE STANDARD_PARTITION -entity de10 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name ALLOW_MULTIPLE_PERSONAS OFF -entity de10 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ASD_REGION_ID 1 -entity de10 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name CROSS_BOUNDARY_OPTIMIZATIONS OFF -entity de10 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_CONSTANTS_ON_INPUTS ON -entity de10 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_INVERSIONS_ON_INPUTS ON -entity de10 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS ON -entity de10 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_INPUTS ON -entity de10 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_BIDIRS ON -entity de10 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS ON -entity de10 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_EXTRACT_HARD_BLOCK_NODES ON -entity de10 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity de10 -section_id Top was ignored
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 16 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 7 input pins
-    Info (21059): Implemented 4 output pins
-    Info (21061): Implemented 5 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4896 megabytes
-    Info: Processing ended: Thu Nov 14 23:59:02 2024
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:08
+Info (21057): Implemented 66 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 14 output pins
+    Info (21061): Implemented 48 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 51 warnings
+    Info: Peak virtual memory: 4900 megabytes
+    Info: Processing ended: Sun Nov 17 19:50:57 2024
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:16
 
 

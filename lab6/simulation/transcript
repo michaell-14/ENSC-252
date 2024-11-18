@@ -1,0 +1,26 @@
+# Compile of BCDCount2.vhd was successful.
+# Compile of Count4.vhd was successful.
+# Compile of PreScale.vhd was successful.
+# Compile of SegDecoder_lab.vhd was successful.
+# Compile of TestReaction.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.testreaction
+# vsim -gui work.testreaction 
+# Start time: 19:19:41 on Nov 17,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testreaction(test_react)
+# Loading ieee.numeric_std(body)
+# Loading work.prescale(behavioral)
+# Loading work.bcdcount2(behavioral_bcd)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.count4(behavioral)
+# Loading work.segdecoder_lab(behavorial)
+add wave sim:/testreaction/*
+run
+run
+run
+run
+run
