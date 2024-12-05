@@ -1,0 +1,149 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -5.382
+TNS   : -112.536
+
+Type  : Slow 1100mV 85C Model Setup 'BlinkSystem:Blinky|PreScale:scale|counter[24]'
+Slack : -0.567
+TNS   : -0.567
+
+Type  : Slow 1100mV 85C Model Setup 'KEY[0]'
+Slack : -0.177
+TNS   : -0.250
+
+Type  : Slow 1100mV 85C Model Hold 'KEY[0]'
+Slack : 0.236
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.381
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'BlinkSystem:Blinky|PreScale:scale|counter[24]'
+Slack : 0.544
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.394
+TNS   : -13.132
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'KEY[0]'
+Slack : -0.394
+TNS   : -2.294
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'BlinkSystem:Blinky|PreScale:scale|counter[24]'
+Slack : -0.394
+TNS   : -0.511
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -5.411
+TNS   : -109.170
+
+Type  : Slow 1100mV 0C Model Setup 'BlinkSystem:Blinky|PreScale:scale|counter[24]'
+Slack : -0.566
+TNS   : -0.566
+
+Type  : Slow 1100mV 0C Model Setup 'KEY[0]'
+Slack : -0.211
+TNS   : -0.257
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.117
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'KEY[0]'
+Slack : 0.217
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'BlinkSystem:Blinky|PreScale:scale|counter[24]'
+Slack : 0.534
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.394
+TNS   : -14.106
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'KEY[0]'
+Slack : -0.394
+TNS   : -2.210
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'BlinkSystem:Blinky|PreScale:scale|counter[24]'
+Slack : -0.394
+TNS   : -0.512
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -3.197
+TNS   : -64.311
+
+Type  : Fast 1100mV 85C Model Setup 'BlinkSystem:Blinky|PreScale:scale|counter[24]'
+Slack : -0.072
+TNS   : -0.072
+
+Type  : Fast 1100mV 85C Model Setup 'KEY[0]'
+Slack : 0.324
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'KEY[0]'
+Slack : 0.140
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.201
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'BlinkSystem:Blinky|PreScale:scale|counter[24]'
+Slack : 0.279
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.322
+TNS   : -2.460
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'KEY[0]'
+Slack : -0.298
+TNS   : -1.299
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'BlinkSystem:Blinky|PreScale:scale|counter[24]'
+Slack : 0.144
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -2.816
+TNS   : -55.564
+
+Type  : Fast 1100mV 0C Model Setup 'BlinkSystem:Blinky|PreScale:scale|counter[24]'
+Slack : -0.039
+TNS   : -0.039
+
+Type  : Fast 1100mV 0C Model Setup 'KEY[0]'
+Slack : 0.352
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.079
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'KEY[0]'
+Slack : 0.127
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'BlinkSystem:Blinky|PreScale:scale|counter[24]'
+Slack : 0.251
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.329
+TNS   : -2.458
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'KEY[0]'
+Slack : -0.290
+TNS   : -1.272
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'BlinkSystem:Blinky|PreScale:scale|counter[24]'
+Slack : 0.144
+TNS   : 0.000
+
+------------------------------------------------------------
